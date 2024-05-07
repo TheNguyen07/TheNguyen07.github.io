@@ -12,6 +12,7 @@ body{
 #resume {
     width: 100%;
     padding-top: 70px;
+    min-height: 100vh;
     /* <embed src="https://docs.google.com/gview?url=https://TheNguyen07.github.io/images/My_Resume_Nguyen.pdf&embedded=true", id="resume"></embed> */
 }
 
