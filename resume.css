@@ -1,0 +1,81 @@
+h1{
+    color:rgb(244, 244, 249);
+}
+
+body{
+    background-color: #4b4b4c;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#resume {
+    width: 100%;
+    padding-top: 70px;
+    /* <embed src="https://docs.google.com/gview?url=https://TheNguyen07.github.io/images/My_Resume_Nguyen.pdf&embedded=true", id="resume"></embed> */
+}
+
+header ul{
+    color: azure;
+    list-style: none;
+    float: right;
+    margin-right: 30px;
+}
+
+nav{
+    background: #212124;
+    height: 70px;
+    width: 100%;
+    font-family: Georgia;
+    position: fixed;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 10px;
+    font-size: 120%;
+    
+}
+
+label.my-name{
+    color: azure;
+    font-size: 40px;
+    line-height: 70px;
+    padding: 0 50px;
+}
+
+ul.options a{
+    color: azure;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+}
+
+ul.options a:hover{
+    color: rgb(151, 206, 155);
+    background-color: #38383b;
+    padding: 10px 7px;
+}
+
+.menu{
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    display: none;
+}
+
+/* @media (max-width: 995px){
+    .menu{
+        display: block;
+    }
+    ul.options{
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        display: block;
+        background-color: #101063;
+        text-align: center;
+    }
+} */
