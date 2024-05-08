@@ -11,10 +11,20 @@ body{
 
 #my-image {
     width: 140px;
+    display: block;
+    margin: 80px 370px 0;
     border-radius: 50%;
-    position: fixed;
-    left: 43%;
-    top: 80px
+    text-align: center;
+    position: static;
+}
+
+#arrowME{
+    font-weight: 600;
+    font-size: 40px;
+    display: block;
+    margin: 80px 730px 0;
+    text-align: center;
+    position: static;
 }
 
 header ul{
@@ -23,25 +33,26 @@ header ul{
     float: right;
 }
 
-nav{
+header{
     background: #212124;
     height: 70px;
     width: 100%;
     font-family: Georgia;
+    position: fixed;
+    top: 0%;
 }
 
-nav ul li{
+menu ul li{
     display: inline-block;
-    margin: 10px 10px;
+    line-height: 0%;
+    margin: 0px 10px;
     font-size: 120%;
-    
 }
 
 label.my-name{
     color: azure;
     font-size: 40px;
-    line-height: 70px;
-    padding: 0 50px;
+    line-height: 40px;
 }
 
 ul.options a{
@@ -59,31 +70,41 @@ ul.options a:hover{
 
 .menu{
     width: 35px;
-    height: 5px;
     background-color: rgb(255, 255, 255);
     margin: 6px 0;
     display: none;
 }
 
-.socials{
-    top: 1000px;
-
-}
-
-#arrowME{
-    font-weight: 500;
-    font-size: 40px;
-    position: fixed;
-    left: 60%;
-    top: 120px
-}
 .container{
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: large;
     margin: 30px;
-    margin-top: 170px;
+    margin-top: 250px;
 }
+
+.socials{
+    color: #373739;
+    text-align: center;
+    left: 40%;
+    position: static;
+    bottom: 5px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 0%;
+    margin: 0px 10px;
+    font-size: 120%;
+}
+
+/* nav{
+    color: #212124;
+    height: 70px;
+    width: 100%;
+    font-family: Georgia;
+    position: fixed;
+} */
 
 
 /* @media (max-width: 995px){
