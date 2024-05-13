@@ -6,8 +6,19 @@ body {
     position: relative;
 }
 
-/* Credit for the heart: GeeksForGeeks */
+#asking {
+    color: rgb(128, 54, 197);
+    font-weight: 1000;
+    font-size: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -155px;
+    margin-left: -145px;
+    max-width: 995px;
+}
 
+/* Credit for the heart: GeeksForGeeks */
 .heart { 
     background: red;
     position: fixed;
