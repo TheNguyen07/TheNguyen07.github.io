@@ -59,10 +59,14 @@ body {
     } 
 } 
 
-/* @media (max-width: 995px){
+@media (max-width: 995px){
     .heart{
-        
-        padding-top: auto;
-        margin: auto auto;
+        position: fixed;
+        top: 75%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 100px;
+        height: 100px;
     }
-} */
+}
