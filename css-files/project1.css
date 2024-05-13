@@ -70,7 +70,7 @@ body {
     } 
 } 
 
-@media (max-width: 995px){
+@media (max-width: 1390px){
     .heart{
         position: fixed;
         top: 50%;
