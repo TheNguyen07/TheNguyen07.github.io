@@ -3,19 +3,24 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 /* Credit for the heart: GeeksForGeeks */
 
 .heart { 
     background: red;
-    position: relative; 
-    height: 100px; 
-    width: 100px; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
     /* Animation */
     transform: rotate(-45deg) scale(1); 
     animation: pulse 2s linear infinite; 
-    margin: 25% 50%;
+    
 }  
   
 .heart::after { 
@@ -54,8 +59,10 @@ body {
     } 
 } 
 
-@media (max-width: 995px){
+/* @media (max-width: 995px){
     .heart{
+        
+        padding-top: auto;
         margin: auto auto;
     }
-}
+} */
