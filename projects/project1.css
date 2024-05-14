@@ -149,7 +149,7 @@ button:active{
     #List {
         margin-top: 10px;
         color: rgb(128, 54, 197);
-        font-size:90%;
+        font-size: 1vh;
         height: 100%;
     }
 }
