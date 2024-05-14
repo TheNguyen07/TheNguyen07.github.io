@@ -101,6 +101,12 @@ button:active{
     height: 100px; 
     width:100px; 
 } 
+
+#test {
+    color: rgb(128, 54, 197);
+
+    height: 100%;
+}
   
 @keyframes pulse{
     50% { 
@@ -133,5 +139,12 @@ button:active{
         width: 60px;
         height: 40px;
         text-align: center;
+    }
+
+    #test {
+        margin-top: 30px;
+        color: rgb(128, 54, 197);
+        font-size:110%;
+        height: 100%;
     }
 }
