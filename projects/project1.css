@@ -147,9 +147,9 @@ button:active{
     }
 
     #List {
-        margin-top: 20px;
+        margin-top: 10px;
         color: rgb(128, 54, 197);
-        font-size:100%;
+        font-size:90%;
         height: 100%;
     }
 }
