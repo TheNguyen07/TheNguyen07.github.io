@@ -1,6 +1,6 @@
 let noButton = document.getElementById('butt2');
 let yesButton = document.getElementById('butt1');
-document.getElementById('test').style.visibility = 'hidden';
+document.getElementById('List').style.visibility = 'hidden';
 
 let c = 0;
 let stop = ['bruh', 'why?', 'stop that'];
@@ -18,6 +18,6 @@ yesButton.addEventListener('click', () =>{
     document.getElementById('butt2').style.display = 'none';
     document.getElementById('asking').style.display = 'none';
     document.getElementsByClassName('heart')[0].style.display = 'none';
-    document.getElementById('test').style.visibility = 'visible';
+    document.getElementById('List').style.visibility = 'visible';
 })
 
