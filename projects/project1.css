@@ -42,6 +42,7 @@ body {
 button:hover {
     background-color: rgb(230, 152, 214); 
     color: white;
+    cursor: pointer;
 }
 
 button {
@@ -52,6 +53,11 @@ button {
     text-align: center;
     font-size: medium;
     border: 2px solid #04AA6D;
+}
+
+button:active{
+    background-color: rgb(128, 54, 197);
+    border: rgb(128, 54, 197);
 }
 
 
