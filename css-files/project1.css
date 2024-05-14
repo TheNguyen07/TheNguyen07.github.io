@@ -24,7 +24,7 @@ body {
     top: 50%;
     left: 50%;
     margin-top: 160px;
-    margin-left: -100px;
+    margin-left: -110px;
     width: 60px;
     height: 40px;
 }
@@ -49,6 +49,7 @@ button {
     border-radius: 20px;
     color: white;
     font-weight: 600;
+    text-align: center;
     font-size: medium;
     border: 2px solid #04AA6D;
 }
