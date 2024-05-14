@@ -117,4 +117,15 @@ button {
         width: 100px;
         height: 100px;
     }
+
+    #butt1{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: 160px;
+        margin-left: -110px;
+        width: 60px;
+        height: 40px;
+        text-align: center;
+    }
 }
