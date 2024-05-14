@@ -33,6 +33,7 @@ header ul{
     color: azure;
     list-style: none;
     float: right;
+    line-height: 40px;
 }
 
 header{
@@ -54,7 +55,8 @@ menu ul li{
 label.my-name{
     color: azure;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 65px;
+    margin-left: 20px;
 }
 
 ul.options a{
