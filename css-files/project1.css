@@ -9,14 +9,50 @@ body {
 #asking {
     color: rgb(128, 54, 197);
     font-weight: 1000;
+    text-align: center;
     font-size: 30px;
     position: fixed;
     top: 50%;
     left: 50%;
     margin-top: -155px;
     margin-left: -145px;
-    max-width: 995px;
+    max-width: 1390px;
 }
+
+#butt1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 160px;
+    margin-left: -100px;
+    width: 60px;
+    height: 40px;
+}
+
+#butt2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 160px;
+    margin-left: 50px;
+    width: 60px;
+    height: 40px;
+}
+
+button:hover {
+    background-color: rgb(230, 152, 214); 
+    color: white;
+}
+
+button {
+    background-color: #04AA6D;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+    border: 2px solid #04AA6D;
+}
+
 
 /* Credit for the heart: GeeksForGeeks */
 .heart { 
