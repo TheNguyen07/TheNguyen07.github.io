@@ -76,13 +76,18 @@ article{
 }
 
 /* Socials */
-/* footer{
+footer{
     color: azure;
-} */
+    position: absolute;
+    bottom: 0;
+}
 
-footer ul.options a{
+footer ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+ul.links a{
     color: azure;
     text-decoration: none;
-    transition: all 0.3s ease 0s;
-    border-radius: 10px;
 }
