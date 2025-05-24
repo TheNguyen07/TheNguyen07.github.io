@@ -1,43 +1,52 @@
 <!DOCTYPE html>
-<html>
-    footer {text-align: center;}
-    <head>
-        <title>Hannah T. Nguyen's Website</title>
-        <link href="../css-files/indexStyle.css" rel="stylesheet">
-        <meta charset="utf-8">
-        <meta name="description" content="Hannah T. Nguyen's Website">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
-    </head>
-    
-    <body>
-        <header>
-            <nav>
-                <label class="my-name">Hannah T. Nguyen</label>
-                <ul class="options">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./html-files/aboutme.html">About</a></li>
-                    <li><a href="./html-files/resume.html">Resume</a></li>
-                    <li><a href="./html-files/projects.html">Projects</a></li>
-                    <li><a href="./test.html">test</a></li>
-                    <!-- <li><a href="#">Robotics</li> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah T. Nguyen's Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="../css-files/indexStyle.css" rel="stylesheet">
+</head>
+
+<style>
+    ul.navbar-nav a:hover{
+    color: rgb(151, 206, 155);
+    /* background-color: #38383b; */
+    padding: 10px;
+}
+
+    ul.navbar-nav{
+    font-size: 14px;
+}
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hannah T. Nguyen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./html-files/aboutme.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./html-files/resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./html-files/projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./test.html">test</a></li>
                 </ul>
-            </nav>
-        </header>
-
-        <!-- This should be main -->
-        <main>
-            <div id="pfp">
-                <p>
-                    <img src="../images/Professional photo.jpeg" id="my-image" alt="A photo of me">
-                    <span id="my-image">&#8592; me</span>
-                    <!-- <span id="arrowME">&#8598; me</span> -->
-                </p>
             </div>
+        </div>
+    </nav>
 
-            <article>
-                <!-- About me Summary -->
-                <h3>me About</h3>
+    <div class="container text-center my-5">
+        <h1>This is me :P</h1>
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-4 gap-2">
+            <img src="../images/Professional photo.jpeg" id="my-image" alt="A photo of me">
+        </div><h3>me About</h3>
                 <p class="typed">
                     Hello World! I am currently studying Electrical and Computer Engineering with minors in Computer Science and Math at the <span style="color: rgb(3, 53, 161);">University of Tulsa ('27)</span>. 
                     I plan to pursue a Master's and a Doctorate degree in Computer Engineering in the future. 
@@ -53,23 +62,10 @@
                 <p>
                     GO KART
                 </p>
-            </article>
-        </main>
+    </div>
 
-        <!-- Socials and Ko-Fi -->
-        <centering>
-        <footer text-align=center>
-            
-            <ul class="links">
-                &emsp;<li><a href="https://www.linkedin.com/in/hannah-tt-nguyen/">Linkedin</a></li>&emsp;
-                <li>Email: don't email me, idk you</li>&emsp;
-                <li>Github: TheNguyen07</li>&emsp;
-                <li>Please support my electronics and computer addiction: <a href="https://ko-fi.com/thenguyen07">Feed me</a></li>
-            </ul>
-            
-        </footer>
-    </centering>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.min.js" integrity="sha384-Re460s1NeyAhufAM5JwfIGWosokaQ7CH15ti6W5Y4wC/m4eJ5opJ2ivohxVM05Wd" crossorigin="anonymous"></script>
-    </body>
+    <!-- Bootstrap & Custom JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

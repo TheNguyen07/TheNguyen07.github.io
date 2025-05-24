@@ -1,471 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Collapse Test</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah T. Nguyen's Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="../css-files/indexStyle.css" rel="stylesheet">
 </head>
-<body class="bg-light p-5">
 
-  <div class="container">
+<style>
+    ul.navbar-nav a:hover{
+    color: rgb(151, 206, 155);
+    /* background-color: #38383b; */
+    padding: 10px;
+}
+
+    ul.navbar-nav{
+    font-size: 14px;
+}
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hannah T. Nguyen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutme.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./projects.html">Projects</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="../test.html">test</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <div class="container">
+      
+<div class="row g-3"> <!-- g-3 adds spacing between columns -->
+    <h3><p>
+      Click on the cards to learn more about a project 😛👍
+    </p></h3>
 
     <!-- Panel 1 -->
-    <div class="card mb-3">
-      <div class="card-header">
-        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          Toggle Panel 1
-        </button>
-      </div>
-      <div class="collapse" id="collapseOne">
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;" 
+              data-bs-toggle="modal" data-bs-target="#modal1" style="cursor: pointer;">
+        <div class="card-header">This Totally Awesome Website</div>
         <div class="card-body">
-          This is Panel 1 content.
+          <p>This is a simple static webpage built with HTML, Bootstrap, CSS, and JavaScript. I built this cause I was bored.</p>
         </div>
-      </div>
+      </button>
     </div>
 
     <!-- Panel 2 -->
-    <div class="card mb-3">
-      <div class="card-header">
-        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Toggle Panel 2
-        </button>
-      </div>
-      <div class="collapse" id="collapseTwo">
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal2" style="cursor: pointer;">
+        <div class="card-header">My 7th Grade Project</div>
         <div class="card-body">
-          This is Panel 2 content.
+          <p>I made a battery using pennies. This was totally a science fair project. This was probably one of the many things that turned me to become an Electrical and Computer Engineer :)</p>
         </div>
-      </div>
+      </button>
+    </div>
+
+    <!-- Panel 3 -->
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal3" style="cursor: pointer;">
+        <div class="card-header">Robotics</div>
+        <div class="card-body">
+          <p>This is the content of Panel 2.</p>
+        </div>
+      </button>
+    </div>
+
+     <!-- Panel 4 -->
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal4" style="cursor: pointer;">
+        <div class="card-header">Digital Design Lab</div>
+        <div class="card-body">
+          <p>This is the content of Panel 2.</p>
+        </div>
+      </button>
+    </div>
+
+    <!-- Panel 5 -->
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal5" style="cursor: pointer;">
+        <div class="card-header">Data Structures and Algorithms/div>
+        <div class="card-body">
+          <p>This is the content of Panel 2.</p>
+        </div>
+      </button>
+    </div>
+
+    <!-- Panel 6 -->
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal6" style="cursor: pointer;">
+        <div class="card-header">Inventions Book</div>
+        <div class="card-body">
+          <p>This is the content of Panel 2.</p>
+        </div>
+      </button>
+    </div>
+
+    <!-- Panel 7 -->
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal7" style="cursor: pointer;">
+        <div class="card-header">A project</div>
+        <div class="card-body">
+          <p>This is the content of Panel 2.</p>
+        </div>
+      </button>
     </div>
 
   </div>
 
-  <!-- Bootstrap JS Bundle (with Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+</div>
 
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <a class="btn btn-link text-decoration-none" data-bs-toggle="collapse" href="#collapsePanel1" role="button" aria-expanded="false" aria-controls="collapsePanel1">
-          Well for one, this website
-        </a>
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1Label">Modal from Panel 1</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="collapse" id="collapsePanel">
-        <div class="card-body">
-            The whole reason I created this website was to learn how to frontend code. I first learned HTML then CSS to make my page look pretty.
-            I didn't learn how to utlize Javascript until I created my first project on here.
-            At first, I was just coding and putting stuff on here, being goofy, and just having fun.
-            My code wasn't the neatest or the best, but eventually, I soon learned the correct format and structure for websites and realized how much easier it is to understand and read.
-            However, that did mean that I had to redo about half of my website, which was a pain.
-            There was a lot of trial and error, especially trying to make my website compatible with both mobile phones and larger devices.
-            What I got out of this project was how to code and format HTML while linking CSS and Javascript.
-            I learned how cool frontend coding was and how much work and time it takes to code a whole website, even just a static page.
-        </div>
-      </div>
+      <div class="modal-body">This is content for Modal 1.</div>
     </div>
-  
+  </div>
+</div>
 
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal2Label">Modal from Panel 2</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">This is content for Modal 2.</div>
+    </div>
+  </div>
+</div>
 
-<main>
-LOL <br>
-<!-- Well for one, this website
-The whole reason I created this website was to learn how to frontend code. I first learned HTML then CSS to make my page look pretty.
-I didn't learn how to utlize Javascript until I created my first project on here.
-At first, I was just coding and putting stuff on here, being goofy, and just having fun.
-My code wasn't the neatest or the best, but eventually, I soon learned the correct format and structure for websites and realized how much easier it is to understand and read.
-However, that did mean that I had to redo about half of my website, which was a pain.
-There was a lot of trial and error, especially trying to make my website compatible with both mobile phones and larger devices.
-What I got out of this project was how to code and format HTML while linking CSS and Javascript.
-I learned how cool frontend coding was and how much work and time it takes to code a whole website, even just a static page.
-<br>
-<br> -->
-Note: This page looks bad cause I have not yet had time to fix things up
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal3Label">Modal from Panel 2</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">This is content for Modal 2.</div>
+    </div>
+  </div>
+</div>
 
-why are you still here?
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<body>
-    <article>
-            <div class="card">
-              <div class="card-header">
-                <a class="btn btn-link text-decoration-none" data-bs-toggle="collapse" href="#collapsePanel2" role="button" aria-expanded="false" aria-controls="collapsePanel2">
-                  7th Grade Project - I made a battery using pennies :)
-                </a>
-              </div>
-              <div class="collapse" id="collapsePanel">
-                <div class="card-body">
-                    Materials: 2 copper wires, a key chain light bulb, 10 pennies, vinegar, salt, paper towels, aluminum foil, cardboard paper, pen, alligator wire clips (optional- mainly to make it easier to connect to things) 
-                    <br> <br>
-                    Procedure:  
-                    <ol>
-                        <li>In a small bowl or glass, mix together 1/4 C. of vinegar (electrolyte) and 1 Tbsp./3 Tsp.  of salt (ions). Stir well. </li>
-                        <li>Gather some pennies, wash with vinegar and salt. This is just a preliminary step to remove dirt and grime. </li>
-                        <li>Get a medium square of aluminum and fold it over and over again until you can put a penny on top of it. </li>
-                        
-                        <li>Use the pen and trace a penny on top the folded aluminum foil.  Then cut the circle.  You should end up with several foil circles. 
-                        *Note: Make sure to peel apart the foil because they might be sticking to others. </li>
-        
-                        <li>Use the pen and trace a penny on top of the cardboard paper  
-                        Do this step over and over again until you have 10 circles. Then cut all of the circles out. </li>
-        
-                        <li>Pour a some vinegar in a small bowl or glass, then put all of cardboard circles in the bowl or glass. </li>
-        
-                        <li>Start building your stack:  
-                            <ol>
-                                <li> put down a penny on a napkin or plate. </li>
-                                <li> take one of your cardboard circle out of the bowl and place it on the penny. 
-                                    *Note: Make sure your cardboard circles aren't soaking wet or it might short-circuit your battery </li>
-                                <li> put one foil circle, that you cut out, on top of the cardboard circle. 
-                                    *Note: Make sure the foil's edges don't touch the other pieces of foil </li>
-                                <li> repeat all of step 7 until you run out of circles </li>
-                            </ol>
-                        </li>
-        
-                        <li>place down a piece of tape sticky side up and place one end of a wire on the tape. Then place your battery on top of your wire.  Place the other wire on top of your battery. </li>
-        
-                        <li>Wrap the tape around the battery and the wires. </li>
-        
-                        <li>Attach the two wires or (alligator clips) to your light bulb. Tape them together (optional) to hold them together so you don't have to hold it. </li>
-        
-                        <li>Your battery could last up to 3 days at most if you do it correctly </li>
-                    </ol>
-        
-        
-                    Hypothesis: 
-                    <br>
-                    My battery that is made out of pennies, foil, cardboard paper, and vinegar.  I think that my battery will last up to 3 days at most.  It can only light a flash light bulb.  I think that this battery is easy to make and soon a lot of people will build their own batteries.  I think that the more pennies I put into my battery, my battery will be stronger and more long lasting. 
-                    <br>
-                    Why it helps in the community: If someone was in need of a battery then they could just build one easily 
-                    <br>
-                    <br>
-                    Name of the project: Pennies for a battery
-                </div>
-              </div>
-            </div>
-        <!-- <div>
-            <h3 id="pennies">7th Grade Project</h3>
-            I made a battery using pennies.<br>
-            <br>
-            Materials: 2 copper wires, a key chain light bulb, 10 pennies, vinegar, salt, paper towels, aluminum foil, cardboard paper, pen, alligator wire clips (optional- mainly to make it easier to connect to things) 
-            <br> <br>
-            Procedure:  
-            <ol>
-                <li>In a small bowl or glass, mix together 1/4 C. of vinegar (electrolyte) and 1 Tbsp./3 Tsp.  of salt (ions). Stir well. </li>
-                <li>Gather some pennies, wash with vinegar and salt. This is just a preliminary step to remove dirt and grime. </li>
-                <li>Get a medium square of aluminum and fold it over and over again until you can put a penny on top of it. </li>
-                
-                <li>Use the pen and trace a penny on top the folded aluminum foil.  Then cut the circle.  You should end up with several foil circles. 
-                *Note: Make sure to peel apart the foil because they might be sticking to others. </li>
-
-                <li>Use the pen and trace a penny on top of the cardboard paper  
-                Do this step over and over again until you have 10 circles. Then cut all of the circles out. </li>
-
-                <li>Pour a some vinegar in a small bowl or glass, then put all of cardboard circles in the bowl or glass. </li>
-
-                <li>Start building your stack:  
-                    <ol>
-                        <li> put down a penny on a napkin or plate. </li>
-                        <li> take one of your cardboard circle out of the bowl and place it on the penny. 
-                            *Note: Make sure your cardboard circles aren't soaking wet or it might short-circuit your battery </li>
-                        <li> put one foil circle, that you cut out, on top of the cardboard circle. 
-                            *Note: Make sure the foil's edges don't touch the other pieces of foil </li>
-                        <li> repeat all of step 7 until you run out of circles </li>
-                    </ol>
-                </li>
-
-                <li>place down a piece of tape sticky side up and place one end of a wire on the tape. Then place your battery on top of your wire.  Place the other wire on top of your battery. </li>
-
-                <li>Wrap the tape around the battery and the wires. </li>
-
-                <li>Attach the two wires or (alligator clips) to your light bulb. Tape them together (optional) to hold them together so you don't have to hold it. </li>
-
-                <li>Your battery could last up to 3 days at most if you do it correctly </li>
-            </ol>
-
-
-            Hypothesis: 
-            <br>
-            My battery that is made out of pennies, foil, cardboard paper, and vinegar.  I think that my battery will last up to 3 days at most.  It can only light a flash light bulb.  I think that this battery is easy to make and soon a lot of people will build their own batteries.  I think that the more pennies I put into my battery, my battery will be stronger and more long lasting. 
-            <br>
-            Why it helps in the community: If someone was in need of a battery then they could just build one easily 
-            <br>
-            Name of the project: Pennies for a battery 
-
-        </div> -->
-        
-<br>
-<br>
-            <div class="card">
-              <div class="card-header">
-                <a class="btn btn-link text-decoration-none" data-bs-toggle="collapse" href="#collapsePanel3" role="button" aria-expanded="false" aria-controls="collapsePanel3">
-                  Robotics (First Tech Challenge)
-                </a>
-              </div>
-              <div class="collapse" id="collapsePanel">
-                <div class="card-body">
-                    <h4>Bazinga 2022-2023</h4>
-            <p>
-                PowerPlay
-                <a href="https://github.com/TheBazingaProject/Bazinga-2022-2023">Github Repository</a>
-
-            </p>
-            <h4>Bazinga 2021-2022</h4>
-            <p>
-                Freight Frenzy
-                <embed src="https://docs.google.com/gview?url=https://TheNguyen07.github.io/images/ControlAwardFreightFrenzy.pdf&embedded=true", id="Resume"></embed>
-            </p>
-            <h4>Bazinga 2020-2021</h4>
-            <p>
-                Ultimate Goal
-            </p>
-            <h4>Agnizab 2019-2020</h4>
-            <p>
-                SKYSTONE
-            </p>
-            <h4>Agnizab 2018-2019</h4>
-            <p>
-                This was my first year on my school's robotics team. The game that was played was Rover Ruckus. This is when I first learned Java and how camera detection works.
-            </p>
-                </div>
-              </div>
-            </div>
-        
-        <div>
-            <h3>Robotics (FTC)</h3>
-            <h4>Bazinga 2022-2023</h4>
-            <p>
-                PowerPlay
-                <a href="https://github.com/TheBazingaProject/Bazinga-2022-2023">Github Repository</a>
-
-            </p>
-            <h4>Bazinga 2021-2022</h4>
-            <p>
-                Freight Frenzy
-                <embed src="https://docs.google.com/gview?url=https://TheNguyen07.github.io/images/ControlAwardFreightFrenzy.pdf&embedded=true", id="Resume"></embed>
-            </p>
-            <h4>Bazinga 2020-2021</h4>
-            <p>
-                Ultimate Goal
-            </p>
-            <h4>Agnizab 2019-2020</h4>
-            <p>
-                SKYSTONE
-            </p>
-            <h4>Agnizab 2018-2019</h4>
-            <p>
-                This was my first year on my school's robotics team. The game that was played was Rover Ruckus. This is when I first learned Java and how camera detection works.
-            </p>
-        </div>
-
-        <div>
-            <h3>Digital Design Lab</h3>
-            <p>
-                In college, there was this course called ECE-2061 Digital Design Lab. We completed a total of 11 labs.
-                One of the main focuses was to get us to be familiar with using MATLAB Simulink. Since there were so many labs, I'll just show my favorite one, since it is basically the cumulation of all 11 labs.
-            </p>
-            <h4>Read/Write Memory</h4>
-            <p>
-
-            </p>
-        </div>
-
-        <div>
-            <h3>Algorithms</h3>
-        </div>
-
-        <div>
-            <h3>Inventions Book</h3>
-            <h4>Making a Motor</h4>
-            <h4>Making a Telegraph</h4>
-            <h4>Making a Radio</h4>
-        </div>
-    </article>
-</body>
-
-
-</main>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<a href="../projects/project1.html">A project</a></li>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap & Custom JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
