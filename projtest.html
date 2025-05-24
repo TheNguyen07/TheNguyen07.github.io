@@ -21,31 +21,6 @@
     ul.navbar-nav{
     font-size: 14px;
 }
-
-    .square-card {
-      width: 250px;
-      height: 250px;
-      background-color: #343a40;
-      color: white;
-      border-radius: 0.5rem;
-      overflow: hidden;
-    }
-
-    .square-card .card-header {
-      background-color: #1f1f1f;
-      padding: 0.75rem 1rem;
-    }
-
-    .square-card .card-body {
-      background-color: #2c2c2c;
-      padding: 1rem;
-      height: 100%; /* Fill remaining space */
-    }
-
-    .collapse-wrapper {
-      height: calc(100% - 56px); /* Adjust for header height */
-      overflow-y: auto;
-    }
 </style>
 
 <body>
@@ -67,49 +42,133 @@
         </div>
     </nav>
 
-    <div class="container d-flex flex-wrap gap-3 justify-content-start">
+    <br>
+    <div class="container">
+      
+<div class="row g-3"> <!-- g-3 adds spacing between columns -->
+    <h3><p>
+      Click on the cards to learn more about a project 😛👍
+    </p></h3>
 
     <!-- Panel 1 -->
-    <div class="square-card">
-      <div class="card-header">
-        <button class="btn btn-sm btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          Toggle 1
-        </button>
-      </div>
-      <div class="collapse collapse-wrapper show" id="collapseOne">
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;" 
+              data-bs-toggle="modal" data-bs-target="#modal1" style="cursor: pointer;">
+        <div class="card-header">This Totally Awesome Website</div>
         <div class="card-body">
-          Panel 1 content goes here.
+          <p>This is a simple static webpage built with HTML, Bootstrap, CSS, and JavaScript. I built this cause I was bored.</p>
         </div>
-      </div>
+      </button>
     </div>
 
     <!-- Panel 2 -->
-    <div class="square-card">
-      <div class="card-header">
-        <button class="btn btn-sm btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Toggle 2
-        </button>
-      </div>
-      <div class="collapse collapse-wrapper show" id="collapseTwo">
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal2" style="cursor: pointer;">
+        <div class="card-header">My 7th Grade Project</div>
         <div class="card-body">
-          Panel 2 content goes here.
+          <p>I made a battery using pennies. This was totally a science fair project. This was probably one of the many things that turned me to become an Electrical and Computer Engineer :)</p>
         </div>
-      </div>
+      </button>
     </div>
 
     <!-- Panel 3 -->
-    <div class="square-card">
-      <div class="card-header">
-        <button class="btn btn-sm btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Toggle 3
-        </button>
-      </div>
-      <div class="collapse collapse-wrapper show" id="collapseThree">
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal3" style="cursor: pointer;">
+        <div class="card-header">Robotics</div>
         <div class="card-body">
-          Panel 3 content goes here.
+          <p>This is the content of Panel 2.</p>
         </div>
-      </div>
+      </button>
     </div>
+
+     <!-- Panel 4 -->
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal4" style="cursor: pointer;">
+        <div class="card-header">Digital Design Lab</div>
+        <div class="card-body">
+          <p>This is the content of Panel 2.</p>
+        </div>
+      </button>
+    </div>
+
+    <!-- Panel 5 -->
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal5" style="cursor: pointer;">
+        <div class="card-header">Data Structures and Algorithms/div>
+        <div class="card-body">
+          <p>This is the content of Panel 2.</p>
+        </div>
+      </button>
+    </div>
+
+    <!-- Panel 6 -->
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal6" style="cursor: pointer;">
+        <div class="card-header">Inventions Book</div>
+        <div class="card-body">
+          <p>This is the content of Panel 2.</p>
+        </div>
+      </button>
+    </div>
+
+    <!-- Panel 7 -->
+    <div class="col-md-4">
+      <button class="card text-white border-0 text-start w-100 h-100 d-flex" style="background-color: #4d4b4e;"
+              data-bs-toggle="modal" data-bs-target="#modal7" style="cursor: pointer;">
+        <div class="card-header">A project</div>
+        <div class="card-body">
+          <p>This is the content of Panel 2.</p>
+        </div>
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1Label">Modal from Panel 1</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">This is content for Modal 1.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal2Label">Modal from Panel 2</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">This is content for Modal 2.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal3Label">Modal from Panel 2</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">This is content for Modal 2.</div>
+    </div>
+  </div>
+</div>
 
     <!-- Bootstrap & Custom JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
