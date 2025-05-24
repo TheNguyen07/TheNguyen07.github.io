@@ -1,5 +1,5 @@
 body{
-    background-color: #4b4b4c;
+    background-color: #5e7869ea;
     padding: 0;
     margin: 0;
 }
@@ -13,7 +13,7 @@ header ul{
 }
 
 header{
-    color: azure;
+    color: rgb(233, 239, 239);
     background: #212124;
     height: 70px;
     width: 100%;
@@ -36,10 +36,10 @@ label.my-name{
 }
 
 ul.options a{
-    color: azure;
+    color: rgb(115, 175, 175);
     text-decoration: none;
     transition: all 0.3s ease 0s;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 ul.options a:hover{
@@ -69,25 +69,18 @@ ul.options a:hover{
     font-weight: 600;
     font-size: 40px;
      display: flex;
-    /*justify-content: center;
-    align-items: center; */
-    gap: 20px;
-    position: absolute;
-  top: 40%;
-  left: 60%;
-  transform: translateY(-50%);
-  margin-left: 10px;
+    
 }
 
 /* About Me Summary */
 article{
-    color: azure;
+    color: rgb(80, 169, 169);
     text-align: center;
 }
 
 /* Socials */
 footer{
-    color: azure;
+    color: rgb(59, 210, 210);
     position: absolute;
     bottom: 0;
 }
@@ -98,6 +91,6 @@ footer ul{
 }
 
 ul.links a{
-    color: azure;
+    color: rgb(84, 200, 200);
     text-decoration: none;
 }

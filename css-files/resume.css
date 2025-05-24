@@ -23,7 +23,7 @@ header ul{
     margin-right: 30px;
 }
 
-nav{
+/* nav{
     background: #212124;
     height: 70px;
     width: 100%;
@@ -36,7 +36,7 @@ nav ul li{
     margin: 10px 10px;
     font-size: 120%;
     
-}
+} */
 
 label.my-name{
     color: azure;
@@ -58,13 +58,13 @@ ul.options a:hover{
     padding: 10px 7px;
 }
 
-.menu{
+/* .menu{
     width: 35px;
     height: 5px;
     background-color: rgb(255, 255, 255);
     margin: 6px 0;
     display: none;
-}
+} */
 
 /* @media (max-width: 995px){
     .menu{
