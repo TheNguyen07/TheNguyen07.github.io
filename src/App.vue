@@ -6,10 +6,11 @@
       <v-app-bar-nav-icon
         v-if="$vuetify.display.smAndDown"
         @click="drawer = !drawer"
+        color="green"
       ></v-app-bar-nav-icon>
 
       <!-- Title / Logo -->
-      <v-toolbar-title>My Portfolio</v-toolbar-title>
+      <v-toolbar-title>Hannah T. Nguyen</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -20,6 +21,7 @@
         text
         v-if="$vuetify.display.mdAndUp"
         @click="scrollToSection(item.link)"
+        class="text-red"
       >
         {{ item.title }}
       </v-btn>
@@ -47,6 +49,8 @@
     <v-main>
       <v-container>
         <h1>Welcome to my portfolio</h1>
+        <h1 style="text-align: center;">Project main</h1>
+         <v-img src="assets\mylogo copy.png" alt="Description of image" class="my-4"></v-img>
       </v-container>
     </v-main>
   </v-app>
@@ -59,9 +63,9 @@ const drawer = ref(false)
 
 const navItems = [
   { title: 'About', link: '#about' },
-  { title: 'Portfolio', link: '#portfolio' },
-  { title: 'Skills', link: '#skills' },
-  { title: 'Contact', link: '#contact' },
+  { title: 'Resume', link: '#skills' },
+  { title: 'Projects', link: '#contact' },
+  { title: 'Achievements', link: '#portfolio' },
 ]
 
 function scrollToSection(link) {
