@@ -1,4 +1,6 @@
 import './assets/main.css'
+import '@mdi/font/css/materialdesignicons.css';
+
 
 import { createApp } from 'vue'
 
@@ -18,6 +20,7 @@ const vuetify = createVuetify({
     defaultTheme: 'dark',
     themes: {
       dark: {
+        dark:true,
         colors: {
           background: '#000000ff',
           surface: '#000000ff',
