@@ -1,23 +1,40 @@
 <template>
-  <v-container fluid class="pa-0 ma-0 fill-width-bg">
-    <v-row no-gutters>
+  <v-container fluid class="pa-0 ma-0">
+    <v-row no-gutters class="mt-16">
       <v-col cols="12">
-        <v-card
-          color="green-darken-4"
-          title="Evening sunset"
-          subtitle="Take a walk down the beach"
-          flat
-          rounded="0"
-          class="w-100"
+        <v-card 
+          variant="outlined" 
+          style="background-color: rgba(23, 50, 20); border-color: green;"
+          rounded="3" 
         >
-          </v-card>
-      </v-col>
-    </v-row>
+          <v-row no-gutters>
+            <v-col cols="4" sm="3" md="2" lg="1">
+              <v-img
+                src="/src/assets/Professional photo.jpeg"
+                cover
+                height="100%"
+              ></v-img>
+            </v-col>
 
-    <v-row no-gutters>
-      <v-col cols="12">
-        <v-card color="green" variant="outlined" flat rounded="0" class="w-100">
-          <v-card-item>About Me</v-card-item>
+            <v-col cols="8" sm="9" md="10" lg="11">
+              <v-card-item class="pl-4">
+                <v-card-title>Welcome to Hannah T. Nguyen's Adventure</v-card-title>
+                <v-card-subtitle></v-card-subtitle>
+                <v-divider></v-divider>
+                <v-card-text class="mt-1">
+                  Electrical and Computer Engineering Student
+                </v-card-text>
+              </v-card-item>
+
+              <v-card-actions>
+                <v-btn
+                  variant="outlined"
+                  color="green-lighten-2"
+                  text="View my Quests"
+                ></v-btn>
+              </v-card-actions>
+            </v-col>
+          </v-row>
         </v-card>
       </v-col>
     </v-row>
@@ -28,15 +45,10 @@
 </script>
 
 <style scoped>
-.fill-width-bg {
-/* This ensures the container itself stretches and holds the color */
-min-width: 100%;
-min-height: 100vh;
-background-color: #2a1a1a !important; /* Your reddish-dark color */
-}
 /* Force containers to be 100% width at all times */
 .v-container {
   max-width: none !important;
   width: 100% !important;
+  padding: 0 !important;
 }
 </style>
