@@ -26,6 +26,9 @@
       v-model="drawer"
       temporary
       location="left"
+      overlay
+      scrim="black"
+      persistent="false"
     >
       <v-list>
         <v-list-item
