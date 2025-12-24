@@ -1,5 +1,5 @@
 <template>
-  <v-container class="sections">
+  <v-container fluid class="sections">
     <v-row>
       <v-col cols="6">
         <div class="panel">

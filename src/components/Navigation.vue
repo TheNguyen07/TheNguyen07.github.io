@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar color="surface" class="border-outline" elevation="0">
+    <v-app-bar flat color="surface" class="border-outline" elevation="0">
       <v-app-bar-nav-icon
         v-if="$vuetify.display.smAndDown"
         @click="drawer = !drawer"

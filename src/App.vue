@@ -1,10 +1,11 @@
 <template>
   <v-app>
-    <!-- <Navigation /> -->
-
-      <v-main style="padding: 0; margin: 0;">
-        <Test />
-        <test2 />
+    <Navigation />
+    <!-- <Test /> -->
+      <v-main>
+        <!-- <Test /> -->
+        <!-- <test2 /> -->
+         <sheet />
       </v-main>
   </v-app>
 </template>
@@ -15,11 +16,13 @@ html, body, .v-application {
   background-color: #221010 !important;
 
 }
+
 .v-main {
-  width: 100vw !important;
+  /* width: 100vw !important; */
   /* min-width: 100vw !important; */
-  /* padding: 0 !important; */
+  /* padding-left: 0 !important; */
   /* display: block !important;  */
+  /* position: relative !important; */
 }
 
 /* Ensure the wrapper doesn't try to center your content */
@@ -39,5 +42,5 @@ import Navigation from './components/Navigation.vue';
 import AboutMe from './components/AboutMe.vue';
 import Test from './components/Test.vue';
 import test2 from './components/Test2.vue';
-
+import sheet from './components/testing-sheet.vue';
 </script>
