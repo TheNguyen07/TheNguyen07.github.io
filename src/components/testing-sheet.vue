@@ -1,10 +1,14 @@
 <template>
-  <v-sheet class="w-100" color="black" height="100px" :min-width="mdAndUp ? 1000 : '82vw'">
-    <div class="text-center white--text" style="line-height: 100px; font-size: 24px;">
-      Testing
-    </div>
-  </v-sheet>
+  <v-sheet class="w-100" color="black">
+    <v-container class="text-center py-6">
+        <h2 class="text-white">Testing</h2>
+    </v-container>
+    </v-sheet>
+
 </template>
+
+
+
 
 <script setup>
     // import {useDisplay} from 'vuetify'

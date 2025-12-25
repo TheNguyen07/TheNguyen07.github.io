@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Navigation />
+    <!-- <Navigation /> -->
     <!-- <Test /> -->
       <v-main>
         <!-- <Test /> -->
@@ -20,7 +20,7 @@ html, body, .v-application {
 .v-main {
   /* width: 100vw !important; */
   /* min-width: 100vw !important; */
-  /* padding-left: 0 !important; */
+  padding: 0 !important;
   /* display: block !important;  */
   /* position: relative !important; */
 }
@@ -29,6 +29,10 @@ html, body, .v-application {
 /* .v-application__wrap {
   display: block !important;
 } */
+ .v-application__wrap {
+  max-width: none !important;
+}
+
 
 /* 3. Global font */
 html {
