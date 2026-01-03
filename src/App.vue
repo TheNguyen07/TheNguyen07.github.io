@@ -11,6 +11,7 @@
 				</v-card>
 			</div> -->
       <AboutMe />
+      <Test2 />
 			<!-- <div class="half-empty-space"></div> -->
 
 			<!-- <div id="projects" class="scroll-offset">
@@ -39,18 +40,20 @@
 </template>
 
 <script>
-import NavBar from './components/Navigation.vue'
+import NavBar from './components/Navigation.vue';
 // import Footer from './components/common/Footer.vue'
-import About from './components/About.vue'
+import About from './components/About.vue';
 import AboutMe from './components/AboutMe.vue';
 // import Projects from './views/Projects.vue'
 // import WorkExperience from './views/WorkExperience.vue'
+import Test2 from './components/Test2.vue';
 
 export default {
 	name: 'App',
 	components: {
 		NavBar,
 		AboutMe,
+    Test2,
 	},
 }
 </script>
@@ -79,7 +82,7 @@ export default {
 .half-empty-space {
 	height: 5vw;
 }
-
+/* 
 h1 {
 	text-align: center;
 	font-size: 5rem;
@@ -87,9 +90,6 @@ h1 {
 	@media (max-width: 600px) {
 		font-size: 3rem;
 	}
-}
+} */
 
-.v-card {
-	background-color: #181818 !important;
-}
 </style>
