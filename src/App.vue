@@ -1,50 +1,95 @@
 <template>
-  <v-app>
-    <!-- <Navigation /> -->
-    <!-- <Test /> -->
-      <v-main>
-        <!-- <Test /> -->
-        <!-- <test2 /> -->
-         <sheet />
-      </v-main>
-  </v-app>
+	<v-app>
+		<NavBar />
+		<v-main>
+			<!-- <div id="about" class="scroll-offset">
+				<v-card>
+					<div class="half-empty-space"></div>
+					<h1>About Me</h1>
+					<About class="mt-4" />
+					<div class="full-empty-space"></div>
+				</v-card>
+			</div> -->
+      <AboutMe />
+			<!-- <div class="half-empty-space"></div> -->
+
+			<!-- <div id="projects" class="scroll-offset">
+				<v-card>
+					<div class="half-empty-space"></div>
+					<h1>Projects</h1>
+					<Projects class="mt-4" />
+					<div class="full-empty-space"></div>
+				</v-card>
+			</div>
+
+			<div class="half-empty-space"></div>
+
+			<div id="work-experience" class="scroll-offset">
+				<v-card>
+					<div class="half-empty-space"></div>
+					<h1>Work Experience</h1>
+					<WorkExperience class="mt-4" />
+					<div class="full-empty-space"></div>
+				</v-card>
+			</div>
+			<div class="half-empty-space"></div> -->
+		</v-main>
+		<!-- <Footer /> -->
+	</v-app>
 </template>
 
-<style>
-/* 1. Set a single source of truth for the background color */
-html, body, .v-application {
-  background-color: #221010 !important;
-
-}
-
-.v-main {
-  /* width: 100vw !important; */
-  /* min-width: 100vw !important; */
-  padding: 0 !important;
-  /* display: block !important;  */
-  /* position: relative !important; */
-}
-
-/* Ensure the wrapper doesn't try to center your content */
-/* .v-application__wrap {
-  display: block !important;
-} */
- .v-application__wrap {
-  max-width: none !important;
-}
-
-
-/* 3. Global font */
-html {
-  font-family: 'MedievalSharp', cursive, serif !important;
-}
-
-</style>
-
-<script setup>
-import Navigation from './components/Navigation.vue';
+<script>
+import NavBar from './components/Navigation.vue'
+// import Footer from './components/common/Footer.vue'
+import About from './components/About.vue'
 import AboutMe from './components/AboutMe.vue';
-import Test from './components/Test.vue';
-import test2 from './components/Test2.vue';
-import sheet from './components/testing-sheet.vue';
+// import Projects from './views/Projects.vue'
+// import WorkExperience from './views/WorkExperience.vue'
+
+export default {
+	name: 'App',
+	components: {
+		NavBar,
+		AboutMe,
+	},
+}
 </script>
+
+<style scoped>
+.scroll-offset {
+	scroll-margin-top: -40px;
+}
+
+@media (max-width: 1919px) {
+	.scroll-offset {
+		scroll-margin-top: 0px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.scroll-offset {
+		scroll-margin-top: 40px;
+	}
+}
+
+.full-empty-space {
+	height: 10vw;
+}
+
+.half-empty-space {
+	height: 5vw;
+}
+
+h1 {
+	text-align: center;
+	font-size: 5rem;
+
+	@media (max-width: 600px) {
+		font-size: 3rem;
+	}
+}
+
+.v-card {
+	background-color: #181818 !important;
+}
+</style>
