@@ -2,28 +2,35 @@
   <v-container fluid>
     <v-row>
       <v-col>
-        <v-card 
-          variant="outlined" 
-          style="background-color: rgba(23, 50, 20); 
-          border-color: black;"
+        <v-card
+          variant="outlined"
           flat
           max-width="93%"
-          class="mx-auto"
+          class="mx-auto d-flex"
+          style="
+            background-color: rgba(23, 50, 20);
+            border-color: black;
+            min-height: 280px;"
         >
           <v-row justify="center">
             <v-col cols="12" md="10" lg="9" xl="8">
-              <v-row no-gutters>
-                <v-col cols="4" sm="3" md="2">
+              <v-row no-gutters class="fill-height">
+                <v-col cols="5" sm="4" md="3" lg="3" class="d-flex">
                   <v-img
                     src="/src/assets/Professional photo.jpeg"
                     cover
                     height="100%"
-                    min-height="150px"
                   ></v-img>
                 </v-col>
 
-                <v-col cols="8" sm="9" md="10">
-                  <v-card-item>
+                <v-col
+                  cols="7"
+                  sm="8"
+                  md="9"
+                  lg="9"
+                  class="d-flex flex-column justify-center align-center text-center"
+                >
+                  <v-card-item class="text-center">
                     <v-card-title class="text-wrap" style="font-size: 25px">
                       Welcome to Hannah T. Nguyen's Adventure
                     </v-card-title>
@@ -64,5 +71,11 @@
 
 body{
   font-family: 'MedievalSharp', cursive, serif !important
+}
+
+@media (min-width: 960px) {
+  .hero-card {
+    min-height: 350px;
+  }
 }
 </style>
