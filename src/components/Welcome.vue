@@ -30,7 +30,7 @@
 
 
               <v-card-text class="pa-2">
-                Electrical and Computer Engineering Student
+                Electrical and Computer Engineering Wizard
               </v-card-text>
 
               <v-btn

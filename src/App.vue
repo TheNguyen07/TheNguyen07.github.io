@@ -38,7 +38,7 @@
 			</div>
 			<div class="half-empty-space"></div> -->
 		</v-main>
-		<!-- <Footer /> -->
+		<Footer />
 	</v-app>
 </template>
 
@@ -52,6 +52,7 @@ import Welcome from './components/Welcome.vue';
 import Test2 from './components/Test2.vue';
 import AboutMe from './components/AboutMe.vue';
 import Projects from './components/Projects.vue';
+import Footer from './components/Footer.vue';
 
 export default {
 	name: 'App',
@@ -61,6 +62,7 @@ export default {
     Test2,
     Welcome,
     Projects,
+    Footer,
 	},
 }
 </script>

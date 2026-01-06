@@ -1,7 +1,7 @@
 <template>
   <section class="section-wrapper">
     <v-container class="content-container">
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title">My Journey</h2>
 
       <v-row style="align-content: center;">
         <v-col cols="12" md="3" class="icon-col">
@@ -11,13 +11,16 @@
         <v-col cols="12" md="9">
           <p class="section-text">
             I am an engineering student from the University of Tulsa who enjoys building and inventing.
-            My interests include software engineering, embedded systems,
-            and creating projects that balance function with design.
+            My full degree title is Electrical and Computer Engineering with minors in Computer Science and Math.
+            My interests include embedded systems, software development, and creating projects that balance function with design.
           </p>
 
           <p class="section-text">
-            I value clarity, structure, and craftsmanship in my work —
-            inspired by medieval guilds and timeless design.
+            Languages: 
+          </p>
+
+          <p class="section-text">
+            I am always looking for an opportunity to challenge myself and learn new things. Knowledge is power after all.
           </p>
         </v-col>
       </v-row>
