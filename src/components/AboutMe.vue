@@ -1,81 +1,58 @@
 <template>
-  <v-container fluid>
-    <v-row>
-      <v-col>
-        <v-card
-          variant="outlined"
-          flat
-          max-width="93%"
-          class="mx-auto d-flex"
-          style="
-            background-color: rgba(23, 50, 20);
-            border-color: black;
-            min-height: 280px;"
-        >
-          <v-row justify="center">
-            <v-col cols="12" md="10" lg="9" xl="8">
-              <v-row no-gutters class="fill-height">
-                <v-col cols="5" sm="4" md="3" lg="3" class="d-flex">
-                  <v-img
-                    src="/src/assets/Professional photo.jpeg"
-                    cover
-                    height="100%"
-                  ></v-img>
-                </v-col>
+  <section class="section-wrapper">
+    <v-container class="content-container">
+      <h2 class="section-title">About Me</h2>
 
-                <v-col
-                  cols="7"
-                  sm="8"
-                  md="9"
-                  lg="9"
-                  class="d-flex flex-column justify-center align-center text-center"
-                >
-                  <v-card-item class="text-center">
-                    <v-card-title class="text-wrap" style="font-size: 25px">
-                      Welcome to Hannah T. Nguyen's Adventure
-                    </v-card-title>
-                    <v-divider color="green" class="my-2"></v-divider>
-                    <v-card-text class="pa-0">
-                      Electrical and Computer Engineering Student
-                    </v-card-text>
-                  </v-card-item>
+      <v-row style="align-content: center;">
+        <v-col cols="12" md="3" class="icon-col">
+          <v-icon size="64" color="#6fbf73">mdi-sword-cross</v-icon>
+        </v-col>
 
-                  <v-card-actions class="mt-1" style="justify-content: center;">
-                    <v-btn
-                      variant="outlined"
-                      color="green-lighten-2"
-                      text="View my Quests"
-                    ></v-btn>
-                  </v-card-actions>
-                </v-col>
-              </v-row>
-            </v-col>
-          </v-row>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-container>
+        <v-col cols="12" md="9">
+          <p class="section-text">
+            I am an engineering student from the University of Tulsa who enjoys building and inventing.
+            My interests include software engineering, embedded systems,
+            and creating projects that balance function with design.
+          </p>
+
+          <p class="section-text">
+            I value clarity, structure, and craftsmanship in my work —
+            inspired by medieval guilds and timeless design.
+          </p>
+        </v-col>
+      </v-row>
+    </v-container>
+  </section>
 </template>
 
-<script setup>
-</script>
-
 <style scoped>
-/* Force containers to be 100% width at all times */
-.v-container {
-  max-width: none !important;
-  width: 100% !important;
-  padding: 0 !important;
-  
+.section-wrapper {
+  width: 100%;
+  background-color: #000000;
+  border-top: 2px solid #2e7d32;
+  border-bottom: 2px solid #2e7d32;
+  padding: 80px 0;
 }
 
-body{
-  font-family: 'MedievalSharp', cursive, serif !important
+.content-container {
+  max-width: 1100px;
 }
 
-@media (min-width: 960px) {
-  .hero-card {
-    min-height: 350px;
-  }
+.section-title {
+  text-align: center;
+  color: #6fbf73;
+  font-size: 2.4rem;
+  margin-bottom: 48px;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e6e6e6;
+  margin-bottom: 16px;
+}
+
+.icon-col {
+  text-align: center;
 }
 </style>

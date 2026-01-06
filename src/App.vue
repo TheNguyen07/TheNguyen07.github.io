@@ -10,7 +10,10 @@
 					<div class="full-empty-space"></div>
 				</v-card>
 			</div> -->
+      <Welcome />
+      <div class="half-empty-space"></div>
       <AboutMe />
+      <Projects />
       <Test2 />
 			<!-- <div class="half-empty-space"></div> -->
 
@@ -43,10 +46,12 @@
 import NavBar from './components/Navigation.vue';
 // import Footer from './components/common/Footer.vue'
 import About from './components/About.vue';
-import AboutMe from './components/AboutMe.vue';
+import Welcome from './components/Welcome.vue';
 // import Projects from './views/Projects.vue'
 // import WorkExperience from './views/WorkExperience.vue'
 import Test2 from './components/Test2.vue';
+import AboutMe from './components/AboutMe.vue';
+import Projects from './components/Projects.vue';
 
 export default {
 	name: 'App',
@@ -54,14 +59,26 @@ export default {
 		NavBar,
 		AboutMe,
     Test2,
+    Welcome,
+    Projects,
 	},
 }
 </script>
 
-<style scoped>
+<style>
 .scroll-offset {
 	scroll-margin-top: -40px;
 }
+
+html,body {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.v-application {
+  overflow-y: visible;
+}
+
 
 @media (max-width: 1919px) {
 	.scroll-offset {
@@ -82,6 +99,24 @@ export default {
 .half-empty-space {
 	height: 5vw;
 }
+
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* IE / old Edge */
+* {
+  -ms-overflow-style: none;
+}
+
 /* 
 h1 {
 	text-align: center;
