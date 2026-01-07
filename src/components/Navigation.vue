@@ -14,7 +14,8 @@
           v-for="item in navItems"
           :key="item.title"
           variant="text"
-          @click="scrollToSection(item.link)"
+          v-bind="item.resume ? { href: item.link, target: '_blank', rel: 'noopener' } 
+            : {}"@click="!item.resume && scrollToSection(item.link)"
           class="text-green"
         >
           {{ item.title }}
@@ -34,7 +35,8 @@
         <v-list-item
           v-for="item in navItems"
           :key="item.title"
-          @click="drawer = false"
+          v-bind="item.resume ? { href: item.link, target: '_blank', rel: 'noopener' } 
+          : {}"@click="drawer = false"
           class="text-green-darken-2"
         >
           <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -50,7 +52,7 @@ const drawer = ref(false)
 
 const navItems = [
   { title: 'About', link: '#about' },
-  { title: 'Resume', link: '#skills' },
+  { title: 'Resume', link: './Resume_Website.pdf', resume:true },
   { title: 'Projects', link: '#contact' },
   { title: 'Achievements', link: '#portfolio' },
 ]

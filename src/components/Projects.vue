@@ -12,7 +12,8 @@
         >
           <div class="project-card">
             <div class="project-image">
-              <v-icon size="48">mdi-image-outline</v-icon>
+              <img :src="project.photo"
+                   :alt="project.title">
             </div>
 
             <h3>{{ project.title }}</h3>
@@ -28,7 +29,8 @@
 const projects = [
   {
     title: 'Project One',
-    description: 'A personal project focused on clean design and structure.'
+    description: 'A personal project focused on clean design and structure.',
+    photo: './mylogo.png'
   },
   {
     title: 'Project Two',

@@ -15,9 +15,9 @@
             My interests include embedded systems, software development, and creating projects that balance function with design.
           </p>
 
-          <p class="section-text">
+          <!-- <p class="section-text">
             Languages: 
-          </p>
+          </p> -->
 
           <p class="section-text">
             I am always looking for an opportunity to challenge myself and learn new things. Knowledge is power after all.
