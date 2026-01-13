@@ -51,7 +51,7 @@ import { ref } from 'vue'
 const drawer = ref(false)
 
 const navItems = [
-  { title: 'About', link: '#about' },
+  { title: 'About', link: '#AboutMe' },
   { title: 'Resume', link: './Resume_Website.pdf', resume:true },
   { title: 'Projects', link: '#contact' },
   { title: 'Achievements', link: '#portfolio' },

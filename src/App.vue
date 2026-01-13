@@ -14,7 +14,7 @@
       <div class="half-empty-space"></div>
       <AboutMe />
       <Projects />
-      <Test2 />
+      <!-- <Test2 /> -->
 			<!-- <div class="half-empty-space"></div> -->
 
 			<!-- <div id="projects" class="scroll-offset">

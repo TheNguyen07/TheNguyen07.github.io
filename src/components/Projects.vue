@@ -26,19 +26,38 @@
 </template>
 
 <script setup>
+import PCB from '@/assets/Projects/PCB/PCB.png'
+import RFID from '@/assets/Projects/RFID/Blocks.png'
+import FPGA from '@/assets/Projects/RE_FPGA/Basys.png'
+import MIPS from '@/assets/Projects/MIPS/MIPS.png'
+import website from '@/assets/Projects/Website/website3.png'
+
 const projects = [
   {
-    title: 'Project One',
-    description: 'A personal project focused on clean design and structure.',
-    photo: './mylogo.png'
+    title: 'IPS Display Module PCB',
+    description: 'Designed an IPS Display module using an STM32G0B1CEU6 MCU and ER-TFT0.99-2 in Altium Designer.',
+    photo: PCB,
+    github: ''
   },
   {
-    title: 'Project Two',
-    description: 'An engineering-focused build using modern tools.'
+    title: 'RFID Analysis of University IDs',
+    description: 'Conducted acapstone research project on reverse engineering TU ID card systems, identifying 3+ software and hardware vulnerabilities. Proposed and documented security solutions including password protection with lock bits, reinforced hardware design, and card number obfuscation.',
+    photo: RFID
   },
   {
-    title: 'Project Three',
-    description: 'A system designed for reliability and clarity.'
+    title: 'Reverse Engineer a Custom PCB into an FPGA board',
+    description: 'Reverse engineered a custom PCB and implemented the functionality on an FGPA board using VHDL.',
+    photo: FPGA
+  },
+  {
+    title: 'Assembly Language Projectile Trajectory Simulation',
+    description: 'Project involved programming in MARS MIPS assembly to calculate projectile time-of-flight, maximum height, and trajectory angle based on user input. Applied physics equations of motion to model artillery firing scenarios, validated results across both implementations, and documented methodology, findings, and error analysis in a professional report.',
+    photo: MIPS
+  },
+  {
+    title: 'Custom Website Hosted on Github',
+    description: 'Created, designed, and deployed a personal portfolio website using 4+ front end languages and frameworks. Implemented responsive layouts, interactive features, and GitHub version control to showcase projects and skills.',
+    photo: website
   }
 ]
 </script>
@@ -62,7 +81,7 @@ const projects = [
 }
 
 .project-card {
-  background-color: #000000;
+  background-color: #282828;
   border: 2px solid #2e7d32;
   padding: 24px;
   height: 100%;
@@ -74,13 +93,14 @@ const projects = [
 }
 
 .project-image {
-  height: 140px;
+  height: 250px;
   border: 2px solid #3fa34d;
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
-  background-color: #000000;
+  background-color: #2f2f2f;
 }
 
 .project-card h3 {
@@ -92,4 +112,11 @@ const projects = [
   color: #e6e6e6;
   font-size: 0.95rem;
 }
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 </style>
