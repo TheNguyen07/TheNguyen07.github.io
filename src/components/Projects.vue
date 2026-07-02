@@ -1,7 +1,7 @@
 <template>
   <section class="section-wrapper">
     <v-container class="content-container">
-      <h2 class="section-title">My Portfolio</h2>
+      <h2 class="section-title">My Quest Scrolls</h2>
 
       <v-row>
         <v-col
