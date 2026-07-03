@@ -40,8 +40,8 @@ export const feats = [
     title: "Personal Portfolio Website",
     when: "Ongoing",
     text: "Designed and deployed a personal portfolio using HTML, CSS, JavaScript, with the Vue3 framework, with responsive layouts and version control via GitHub Pages.",
-    link: "TheNguyen07.github.io",
-    
+    link: "https://github.com/TheNguyen07/TheNguyen07.github.io",
+    linkLabel: "Github",
     images: [],
     details: [
       "This project initially started when I first became interested in web development in which I learned the basics HTML, CSS, and JavaScript. From there, I learned Bootstrap and attempted to implement that. After learning Vue3 and npm from one of my internships, I decided to implement that and is what I'm currently using.",
@@ -52,22 +52,23 @@ export const feats = [
   {
     title: "Projectile Trajectory Simulation",
     when: "Fall 2025",
-    images: [],
+    images: [{ src: "/images/MIPS.png", alt: "MIPS measurements screenshot" },],
     link: "https://github.com/TheNguyen07/MIPS_Physics_Project",
+    linkLabel: "Github",
     text: "Programmed in MARS MIPS assembly and C to calculate time-of-flight, maximum height, and trajectory angle, validating results across both implementations with a full report.",
     details: [
       "This project modeled artillery-style projectile motion by implementing the same physics twice, once in MIPS assembly using the MARS simulator, and once in C, in order to compare how a low-level and a high-level implementation handle the same numerical problem.",
-      "The core of the work was applying the standard equations of motion — decomposing initial velocity into horizontal and vertical components, then solving for time-of-flight, maximum height, and impact angle based on user-supplied launch conditions. Getting the MIPS version right meant being deliberate about register usage, floating-point instructions, and manual control flow that C normally handles for free.",
-      "After both versions were working, results were cross-validated against each other and against hand-calculated expected values to catch rounding or logic errors. The process, findings, and any discrepancies between implementations were documented in a professional report, including an error analysis discussing where and why the two approaches diverged."
+      "Given some parameters, I used the basic kinematic equations and Bhaskara's sine approximation to split the horizontal and vertical components, then solving for time-of-flight, maximum height, and impact angle based on user inputted launch conditions. Getting the MIPS version right meant being deliberate about register usage, floating-point instructions, and manual control flow that C normally handles for free.",
+      "After both versions were working, results were compared against hand-calculated expected values to catch rounding or logic errors. The process, findings, and any discrepancies between implementations were documented in a professional report, including an error analysis discussing where and why the two approaches diverged."
     ],
   },
   {
-    title: "Reverse-Engineered PCB",
+    title: "Reverse-Engineered custom PCB into an FPGA board",
     when: "Fall 2025",
-    images: [],
+    images: [{ src: "/images/Basys.png", alt: "Basys3 screenshot" },],
     text: "Reverse engineered a custom PCB and rebuilt its functionality on an FPGA board using VHDL.",
     details: [
-      "Starting from a physical circuit board with no accompanying schematic, this project involved tracing signal paths, identifying components, and inferring the board's logic purely from its physical layout and observed behavior — a core skill in hardware reverse engineering and embedded security work.",
+      "Starting from a physical circuit board with no accompanying schematic, this project involved tracing signal paths, identifying components, and inferring the board's logic purely from its physical layout and observed behavior.",
       "Once the board's functionality was understood, the next step was translating that behavior into VHDL and implementing it on an FPGA, effectively rebuilding the original circuit's logic in a reconfigurable hardware description rather than fixed silicon.",
       "The project reinforced the connection between physical circuit design and hardware description languages, and highlighted how much can be learned about a device's function just from careful physical and electrical inspection."
     ],
@@ -84,14 +85,24 @@ export const feats = [
     ],
   },
   {
-    title: "University RFID Analysis",
+    title: "RFID Analysis of University IDs",
     when: "Fall 2023",
-    images: [],
+    images: [{ src: "/images/Blocks.png", alt: "Data Blocks screenshot" },],
     text: "Capstone project reverse engineering TU ID card systems; identified three vulnerabilities and proposed lock-bit password protection, hardware reinforcement, and card-number obfuscation.",
     details: [
       "This capstone research project examined the security of the university's RFID-based ID card system from both the software and hardware sides, treating it as a real-world case study in access-control vulnerabilities.",
       "The analysis identified three distinct weaknesses spanning how card data was stored, how card numbers could be inferred or exposed, and how physical hardware could be tampered with to bypass intended protections.",
       "For each vulnerability, a corresponding mitigation was proposed and documented: enabling password protection with lock bits to prevent unauthorized rewrites, reinforcing the physical hardware against tampering, and obfuscating card numbers to make them harder to harvest or predict. The findings were compiled into a formal report intended to inform potential security improvements to the system."
+    ],
+  },
+  {
+    title: "IPS Display Module Hardware Design",
+    when: "Spring 2026",
+    images: [{ src: "/images/PCB.png", alt: "PCB Design screenshot" },],
+    text: "Designed an IPS Display module using an STM32G0B1CEU6 MCU and ER-TFT0.99-2 in Altium Designer.",
+    details: [
+      "Following the Hexabitz constraints, I used Altium designer to design and develop an IPS Display module using an STM32G0B1CEU6 MCU and ER-TFT0.99-2.",
+      "This project helped me apply the knowledge I learned from my PCB "
     ],
   },
 ]
