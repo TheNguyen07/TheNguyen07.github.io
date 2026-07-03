@@ -30,9 +30,7 @@ export const certifications = [
   { code: "TS/SCI", title: "TS/SCI Clearance", when: "Active", text: "Top Secret / Sensitive Compartmented Information security clearance." },
 ]
 
-// Each project below can optionally include an "images" array to show photos
-// in the expanded view. See the README section "Adding project photos" for
-// the full how-to. Example:
+
 //   images: [
 //     { src: "/projects/portfolio-homepage.jpg", alt: "Portfolio homepage screenshot" },
 //     { src: "/projects/portfolio-mobile.jpg", alt: "Portfolio site on mobile", caption: "Responsive mobile layout" },
@@ -41,21 +39,21 @@ export const feats = [
   {
     title: "Personal Portfolio Website",
     when: "Ongoing",
-    text: "Designed and deployed a personal portfolio using HTML, CSS, JavaScript, and Bootstrap, with responsive layouts and version control via GitHub Pages.",
+    text: "Designed and deployed a personal portfolio using HTML, CSS, JavaScript, with the Vue3 framework, with responsive layouts and version control via GitHub Pages.",
     link: "TheNguyen07.github.io",
-    images: [
-      // { src: "/projects/portfolio-homepage.jpg", alt: "Portfolio homepage screenshot" },
-    ],
+    
+    images: [],
     details: [
-      "This site began as a way to have a single, professional home for coursework, research, and project write-ups that didn't fit neatly into a resume. It's built with hand-written HTML, CSS, and JavaScript on top of the Bootstrap grid, which made it possible to keep the layout responsive across desktop and mobile without pulling in a heavier framework.",
-      "The build focuses on the fundamentals: semantic markup, accessible navigation, and interactive touches like smooth scrolling and collapsible project sections. Everything is tracked with Git and deployed automatically through GitHub Pages, so updates go live as soon as they're pushed.",
-      "It's an evolving project — as new coursework and research wrap up, it gets folded back into the site, making it a living record of skills as they're gained rather than a static snapshot."
+      "This project initially started when I first became interested in web development in which I learned the basics HTML, CSS, and JavaScript. From there, I learned Bootstrap and attempted to implement that. After learning Vue3 and npm from one of my internships, I decided to implement that and is what I'm currently using.",
+      "This site is a way for me to have a single, professional place for coursework, research, and projects that couldn't fit into a one or two page resume. Everything is tracked with Git and deployed automatically through GitHub Pages, so updates go live as soon as they're pushed.",
+      "This is an evolving project and is updated periodically whenever I remember to edit my experiences, making it a living record of skills as they're gained rather than a static snapshot. The link below directs to my github where my project is hosted."
     ],
   },
   {
     title: "Projectile Trajectory Simulation",
     when: "Fall 2025",
     images: [],
+    link: "https://github.com/TheNguyen07/MIPS_Physics_Project",
     text: "Programmed in MARS MIPS assembly and C to calculate time-of-flight, maximum height, and trajectory angle, validating results across both implementations with a full report.",
     details: [
       "This project modeled artillery-style projectile motion by implementing the same physics twice, once in MIPS assembly using the MARS simulator, and once in C, in order to compare how a low-level and a high-level implementation handle the same numerical problem.",

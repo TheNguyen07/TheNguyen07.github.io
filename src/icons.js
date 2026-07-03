@@ -51,8 +51,6 @@ export const IconStar = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M
 
 export const IconChevron = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9 L12 15 L18 9"/></svg>`
 
-export const PersonSilhouette = `<svg viewBox="0 0 64 64" fill="currentColor"><circle cx="32" cy="22" r="14"/><path d="M8 58 C8 40 18 32 32 32 C46 32 56 40 56 58 Z"/></svg>`
-
 export const HTNShield = `
 <svg viewBox="0 0 48 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="HTN shield">
   <defs>
