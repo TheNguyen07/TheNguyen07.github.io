@@ -52,7 +52,7 @@ export const feats = [
   {
     title: "Projectile Trajectory Simulation",
     when: "Fall 2025",
-    images: [],
+    images: [{ src: "/images/MIPS.png", alt: "MIPS measurements screenshot" },],
     link: "https://github.com/TheNguyen07/MIPS_Physics_Project",
     linkLabel: "Github",
     text: "Programmed in MARS MIPS assembly and C to calculate time-of-flight, maximum height, and trajectory angle, validating results across both implementations with a full report.",
@@ -63,9 +63,9 @@ export const feats = [
     ],
   },
   {
-    title: "Reverse-Engineered PCB",
+    title: "Reverse-Engineered custom PCB into an FPGA board",
     when: "Fall 2025",
-    images: [],
+    images: [{ src: "/images/Basys.png", alt: "Basys3 screenshot" },],
     text: "Reverse engineered a custom PCB and rebuilt its functionality on an FPGA board using VHDL.",
     details: [
       "Starting from a physical circuit board with no accompanying schematic, this project involved tracing signal paths, identifying components, and inferring the board's logic purely from its physical layout and observed behavior.",
@@ -85,14 +85,24 @@ export const feats = [
     ],
   },
   {
-    title: "University RFID Analysis",
+    title: "RFID Analysis of University IDs",
     when: "Fall 2023",
-    images: [],
+    images: [{ src: "/images/Blocks.png", alt: "Data Blocks screenshot" },],
     text: "Capstone project reverse engineering TU ID card systems; identified three vulnerabilities and proposed lock-bit password protection, hardware reinforcement, and card-number obfuscation.",
     details: [
       "This capstone research project examined the security of the university's RFID-based ID card system from both the software and hardware sides, treating it as a real-world case study in access-control vulnerabilities.",
       "The analysis identified three distinct weaknesses spanning how card data was stored, how card numbers could be inferred or exposed, and how physical hardware could be tampered with to bypass intended protections.",
       "For each vulnerability, a corresponding mitigation was proposed and documented: enabling password protection with lock bits to prevent unauthorized rewrites, reinforcing the physical hardware against tampering, and obfuscating card numbers to make them harder to harvest or predict. The findings were compiled into a formal report intended to inform potential security improvements to the system."
+    ],
+  },
+  {
+    title: "IPS Display Module Hardware Design",
+    when: "Spring 2026",
+    images: [{ src: "/images/PCB.png", alt: "PCB Design screenshot" },],
+    text: "Designed an IPS Display module using an STM32G0B1CEU6 MCU and ER-TFT0.99-2 in Altium Designer.",
+    details: [
+      "Following the Hexabitz constraints, I used Altium designer to design and develop an IPS Display module using an STM32G0B1CEU6 MCU and ER-TFT0.99-2.",
+      "This project helped me apply the knowledge I learned from my PCB "
     ],
   },
 ]
