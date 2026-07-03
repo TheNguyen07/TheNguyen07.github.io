@@ -1,12 +1,12 @@
 export const education = [
-  { school: "University of Tulsa — NSA Center of Excellence", degree: "M.S. Computer Engineering, Cyber Operations Specialization", meta: "Advanced Studies", when: "Expected May 2028", gpa: "4.000" },
-  { school: "University of Tulsa — NSA Center of Excellence", degree: "B.S. Electrical & Computer Engineering, Cyber Operations Specialization", meta: "Undergraduate Studies", when: "Expected May 2027", gpa: "4.000" },
+  { school: "University of Tulsa", degree: "M.S. Computer Engineering", meta: "Advanced Studies", when: "Expected May 2028", gpa: "4.000" },
+  { school: "University of Tulsa", degree: "B.S. Electrical & Computer Engineering", meta: "Undergraduate Studies", when: "Expected May 2027", gpa: "4.000" },
   { school: "Union High School, Tulsa, Oklahoma", degree: "High School Diploma", meta: "Salutatorian", when: "May 2023", gpa: "4.96 (Weighted)" },
 ]
 
-export const courseworkNow = ["Electronics II & Laboratory", "Classical Control Theory and Applications", "Operating Systems"]
-export const courseworkFall = ["Electric Power Systems", "Signal & Linear Systems", "Electronics I", "PCB Design Principles and Practice", "Embedded Systems in C"]
-export const courseworkDone = ["Hardware Reverse Engineering", "Computer Organization and Microprocessors", "Introduction to Electromagnetics", "Linear Algebra and Matrix Theory", "Data Structures", "Electrical Circuit Analysis", "Basic Electrical Measurement Lab", "Differential Equations", "Digital Systems Principles", "Discrete Mathematics", "Fundamentals of Algorithms and Computer Applications", "General Physics I–III", "Statistical Methods for Scientists and Engineers", "Radio Frequency Signal Reverse Engineering", "Intro to Programming and Problem Solving", "Ethics in Computer Science and Engineering", "Calculus I–III", "Introduction to Statistics"]
+export const courseworkNow = ["ECE Design Project II", "Neural Networks", ]
+export const courseworkFall = ["General Chemistry I & Laboratory", "Information and Communication Systems", "ECE Design Project I", "Solid State Electric Device", "Engineering Economics"]
+export const courseworkDone = ["Hardware Reverse Engineering", "Radio Frequencies Signal Analysis/Exploitation/Reverse Engineering", "Intro to Program Problem Solving", "Computer Science Principles", "Calculus I-III", "Intro to Statistics", "Intro to Computer Science", "Ethics in Computers & Engineering", "Computer Tools for Electrical Engineers", "Exposition & Argument", "Pirate Atlantic World", "Business & Society", "Fundamental Algorithms in Computer Applications & Laboratory", "Digital Systems Principles & Design Laboratory", "Discrete Mathematics", "Statistical Methods for Scientsts and Engineers", "General Physics I-III & Laboratories", "Public Speaking", "Data Structures", "Electric Circuit Analysis & Laboratory", "Differential Equations", "Reasoning", "Computer Organization/Microprocessors", "Introduction to Electromagnetics", "Linear Algebra Matrix Theory", "Embedded Systems in C", "Electric Power Systems", "Signal & Linear Systems", "Electronics I-II & Laboratory", "PCB Design Principles & Practicals", "Wizard of Oz & American History", "Operating Systems", "Classical Control Theory Applications", "Advanced Embedded Systems", "Stem and Business Writing"];
 
 export const armory = [
   { title: "Realms Traversed", icon: "tower", items: ["Windows 10 / 11", "Linux", "Ubuntu"] },
@@ -18,23 +18,34 @@ export const armory = [
 export const quests = [
   { org: "University School, University of Tulsa", role: "Lab Assistant", when: "Fall 2025 – Present", text: "Assisted 7th-grade Computer Science and 8th-grade Computer Engineering classrooms, and helped organize STEM Club activities engaging students in hands-on projects." },
   { org: "U.S. Government, Washington D.C.", role: "Software Developer Intern", when: "Summer 2025", text: "Developed an AI-assisted application for data triage of a collection; supported engineering, integration, and product evaluation for a collaborative workgroup platform." },
-  { org: "NCFI Laboratory, University of Tulsa", role: "Undergraduate Researcher", when: "Fall 2023 – May 2025", text: "Researched alternative-reality software for affordably re-creating digital crime scenes and reconstructing large areas for digital analysis of protection locations during event planning." },
+  { org: "NCFI Laboratory, University of Tulsa", role: "Undergraduate Researcher", when: "Fall 2023 – Spring 2025", text: "Researched alternative-reality software for affordably re-creating digital crime scenes and reconstructing large areas for digital analysis of protection locations during event planning." },
   { org: "TURC Program, University of Tulsa", role: "Volunteer Java Programming Instructor", when: "Summer 2024", text: "Co-taught two Java courses to 37 incoming freshmen, giving students a head start that let them bypass introductory coursework and begin advanced classes in their first semester." },
   { org: "Junior TURC Program, University of Tulsa", role: "High School Researcher", when: "Summer 2022", text: "Helped migrate the Rayzor Hall keycard system from Arduino to STMicroelectronics, and helped design a physical adaptation of the VR game \u201cKeep Talking and Nobody Explodes.\u201d" },
   { org: "Information Technology Dept., Union Public Schools", role: "Information Technology Intern", when: "Fall 2022 – Spring 2023", text: "Provided in-person IT assistance to students, repaired hardware, and installed software." },
 ]
 
 export const certifications = [
-  { code: "GCIH", title: "SANS GIAC Incident Handler Certification", when: "Jan 2025 – Jan 2029", text: "Validates the ability to detect, respond to, and resolve computer security incidents — understanding common attack techniques, vectors, and tools, and defending against them." },
+  { code: "GCIH", title: "SANS GIAC Incident Handler Certification", when: "Jan 2025 – Jan 2029", text: "GIAC Incident Handler (GCIH) certified professional with proven ability to detect, respond to, and resolve security incidents through deep understanding of attack techniques, vectors, tools, and effective incident response strategies." },
+  { code: "GICSP", title: "SANS Global Industrial Cyber Security Professional Certification", when: "Nov 2025 - Nov 2029", text: "Global Industrial Cyber Security Professional (GICSP) certified, bridging IT, engineering, and cybersecurity to secure industrial control systems across their full lifecycle in vendor-neutral, operational environments."},
   { code: "TS/SCI", title: "TS/SCI Clearance", when: "Active", text: "Top Secret / Sensitive Compartmented Information security clearance." },
 ]
 
+// Each project below can optionally include an "images" array to show photos
+// in the expanded view. See the README section "Adding project photos" for
+// the full how-to. Example:
+//   images: [
+//     { src: "/projects/portfolio-homepage.jpg", alt: "Portfolio homepage screenshot" },
+//     { src: "/projects/portfolio-mobile.jpg", alt: "Portfolio site on mobile", caption: "Responsive mobile layout" },
+//   ]
 export const feats = [
   {
     title: "Personal Portfolio Website",
     when: "Ongoing",
     text: "Designed and deployed a personal portfolio using HTML, CSS, JavaScript, and Bootstrap, with responsive layouts and version control via GitHub Pages.",
     link: "TheNguyen07.github.io",
+    images: [
+      // { src: "/projects/portfolio-homepage.jpg", alt: "Portfolio homepage screenshot" },
+    ],
     details: [
       "This site began as a way to have a single, professional home for coursework, research, and project write-ups that didn't fit neatly into a resume. It's built with hand-written HTML, CSS, and JavaScript on top of the Bootstrap grid, which made it possible to keep the layout responsive across desktop and mobile without pulling in a heavier framework.",
       "The build focuses on the fundamentals: semantic markup, accessible navigation, and interactive touches like smooth scrolling and collapsible project sections. Everything is tracked with Git and deployed automatically through GitHub Pages, so updates go live as soon as they're pushed.",
@@ -44,6 +55,7 @@ export const feats = [
   {
     title: "Projectile Trajectory Simulation",
     when: "Fall 2025",
+    images: [],
     text: "Programmed in MARS MIPS assembly and C to calculate time-of-flight, maximum height, and trajectory angle, validating results across both implementations with a full report.",
     details: [
       "This project modeled artillery-style projectile motion by implementing the same physics twice, once in MIPS assembly using the MARS simulator, and once in C, in order to compare how a low-level and a high-level implementation handle the same numerical problem.",
@@ -54,6 +66,7 @@ export const feats = [
   {
     title: "Reverse-Engineered PCB",
     when: "Fall 2025",
+    images: [],
     text: "Reverse engineered a custom PCB and rebuilt its functionality on an FPGA board using VHDL.",
     details: [
       "Starting from a physical circuit board with no accompanying schematic, this project involved tracing signal paths, identifying components, and inferring the board's logic purely from its physical layout and observed behavior — a core skill in hardware reverse engineering and embedded security work.",
@@ -64,6 +77,7 @@ export const feats = [
   {
     title: "Single-Port Read/Write Memory Design",
     when: "Spring 2024",
+    images: [],
     text: "Designed a 16×4-bit memory device from a 64-bit shift register, address counter, and supporting logic, verifying operation with LEDs and 7-segment displays.",
     details: [
       "This lab focused on building a working memory device entirely from discrete digital logic components — no pre-built memory ICs. The design centered on a 64-bit shift register organized as 16 addressable 4-bit words, paired with an address counter to select which word was being read or written.",
@@ -74,6 +88,7 @@ export const feats = [
   {
     title: "University RFID Analysis",
     when: "Fall 2023",
+    images: [],
     text: "Capstone project reverse engineering TU ID card systems; identified three vulnerabilities and proposed lock-bit password protection, hardware reinforcement, and card-number obfuscation.",
     details: [
       "This capstone research project examined the security of the university's RFID-based ID card system from both the software and hardware sides, treating it as a real-world case study in access-control vulnerabilities.",
@@ -83,10 +98,13 @@ export const feats = [
   },
 ]
 
-export const honors = [
-  { title: "IEEE TU Chapter — President", when: "May 2024 – Present", text: "Led the university chapter, working with the Department Chair to help improve the college." },
+export const activities = [
+  { title: "IEEE TU Chapter — President", when: "May 2024 – Present", text: "Led the university chapter, working with the Department Chair to help improve the college. Led professional development workshops on practical skills like resume writing and soldering. Secured participation from a wide range of industry professionals for networking events. Increased the ECE students industry internship opportunities and participation by 300%." },
   { title: "Student Government Association Senator", when: "Sept 2024 – Jan 2025", text: "College of Engineering and Computer Science Senator." },
   { title: "Eta Kappa Nu (HKN)", when: "Apr 2024 – Present", text: "Honor society member." },
+]
+
+export const awards = [
   { title: "President's Honor Roll, University of Tulsa", when: "Jan 2024 – Present", text: "Given to full-time students maintaining a 4.0 term GPA." },
   { title: "Alan Paller Cyber Scholarship", when: "Jan 2024 – Present", text: "Prestigious scholarship for excellence in cyber studies and a commitment to serve with the federal government or OPM-approved organizations." },
   { title: "University of Tulsa Presidential Scholarship", when: "Aug 2023 – Present", text: "Full-tuition scholarship for high-achieving students." },
@@ -96,5 +114,4 @@ export const honors = [
   { title: "FTC State Championship Control Award, sponsored by ARM Inc.", when: "Feb 2023", text: "Awarded to teams demonstrating innovative sensor use and autonomous robot control." },
   { title: "Salutatorian, Union High School", when: "May 2023", text: "Top 2% of a graduating class of 1,075 students." },
 ]
-
 

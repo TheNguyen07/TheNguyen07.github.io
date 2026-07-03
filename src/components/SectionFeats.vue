@@ -52,6 +52,12 @@ function toggle(title) {
           <div class="feat-body-wrap" :id="'feat-body-' + f.title">
             <div class="feat-body-inner">
               <div class="feat-body-content">
+                <div class="feat-gallery" v-if="f.images && f.images.length">
+                  <figure class="feat-photo-frame" v-for="(img, i) in f.images" :key="i">
+                    <img class="feat-photo" :src="img.src" :alt="img.alt || f.title" loading="lazy" />
+                    <figcaption v-if="img.caption">{{ img.caption }}</figcaption>
+                  </figure>
+                </div>
                 <p v-for="(paragraph, i) in f.details" :key="i">{{ paragraph }}</p>
                 <a v-if="f.link" :href="'https://' + f.link" target="_blank" rel="noopener">{{ f.link }} →</a>
               </div>

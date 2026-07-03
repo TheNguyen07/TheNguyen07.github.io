@@ -1,18 +1,41 @@
 <script setup>
-import { DragonCrest } from '../icons.js'
+import { ref } from 'vue'
+import { PersonSilhouette, HTNShield, KingsCrown } from '../icons.js'
+
+// Looks for /public/portrait.jpg — see README "Adding your portrait" to add one.
+const portraitSrc = '/Professional photo.jpeg'
+const imgFailed = ref(false)
 </script>
 
 <template>
   <header class="hero" id="top">
     <div class="wrap hero-grid">
-      <div class="crest-wrap" v-html="DragonCrest"></div>
+      <div class="crest-wrap">
+        <div class="crown-badge" v-html="KingsCrown"></div>
+        <div class="portrait-ring">
+          <div class="portrait-frame">
+            <img
+              v-if="!imgFailed"
+              :src="portraitSrc"
+              alt="Portrait of Hannah T. Nguyen"
+              class="portrait-img"
+              @error="imgFailed = true"
+            />
+            <div v-else class="portrait-placeholder">
+              <span class="placeholder-icon" v-html="PersonSilhouette"></span>
+              <span class="placeholder-text">Add your portrait at<br /><code>public/portrait.jpg</code></span>
+            </div>
+          </div>
+        </div>
+        <div class="htn-badge" v-html="HTNShield"></div>
+      </div>
       <div>
-        <p class="eyebrow">Cyber Corps Program · Tandy School of Computer Science</p>
+        <p class="eyebrow">Department of Electrical and Computer Engineering · Tandy School of Computer Science</p>
         <h1 class="title"><span class="blackletter fk">Hannah T. Nguyen</span></h1>
-        <p class="subtitle">Squire of the Cyber Realm — Electrical &amp; Computer Engineering, University of Tulsa</p>
+        <p class="subtitle">King of the Electrical &amp; Computer Engineering kingdom, University of Tulsa</p>
         <p class="lede">
           A chronicle of studies, quests, and craftsmanship undertaken in the pursuit of cyber
-          operations mastery — from reverse-engineered circuit boards to the halls of federal service.
+          operations mastery from reverse-engineered circuit boards to the halls of federal service.
         </p>
         <div class="hero-links">
           <a class="seal-btn" href="mailto:htn7254@utulsa.edu">Send a Raven (Email)</a>

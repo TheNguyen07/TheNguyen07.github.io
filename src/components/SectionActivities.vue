@@ -1,28 +1,28 @@
 <script setup>
 import { seals, IconStar } from '../icons.js'
-import { awards } from '../data.js'
+import { activities } from '../data.js'
 import ScrollPanel from './ScrollPanel.vue'
 </script>
 
 <template>
-  <section id="honors">
+  <section id="activities">
     <div class="section-head">
-      <div class="seal-icon" v-html="seals.laurel"></div>
+      <div class="seal-icon" v-html="seals.banner"></div>
       <div>
-        <span class="kicker">Chapter Seven</span>
-        <h2>Honors of the Realm</h2>
+        <span class="kicker">Chapter Six</span>
+        <h2>Orders &amp; Guilds</h2>
       </div>
     </div>
 
     <ScrollPanel v-reveal>
       <div class="honors-list">
-        <div class="honor" v-for="h in awards" :key="h.title">
+        <div class="honor" v-for="a in activities" :key="a.title">
           <span class="star" v-html="IconStar"></span>
           <div>
-            <h3>{{ h.title }}</h3>
-            <p>{{ h.text }}</p>
+            <h3>{{ a.title }}</h3>
+            <p>{{ a.text }}</p>
           </div>
-          <span class="when">{{ h.when }}</span>
+          <span class="when">{{ a.when }}</span>
         </div>
       </div>
     </ScrollPanel>
