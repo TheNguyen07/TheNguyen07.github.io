@@ -3,39 +3,300 @@
 // any component without needing a separate .vue file per icon.
 
 export const DragonCrest = `
-<svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nguyen family dragon crest">
+<svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vietnamese-inspired medieval green dragon crest">
   <defs>
-    <linearGradient id="scaleGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#6fa877"/>
-      <stop offset="1" stop-color="#2f5b3c"/>
-    </linearGradient>
+    <radialGradient id="bgGrad" cx="50%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#1a3322"/>
+      <stop offset="0.58" stop-color="#0f2118"/>
+      <stop offset="1" stop-color="#08110d"/>
+    </radialGradient>
+
     <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#e2c37c"/>
-      <stop offset="1" stop-color="#8a6a2e"/>
+      <stop offset="0" stop-color="#f7eab6"/>
+      <stop offset="0.28" stop-color="#d7b15f"/>
+      <stop offset="0.68" stop-color="#946b2c"/>
+      <stop offset="1" stop-color="#563913"/>
     </linearGradient>
+
+    <linearGradient id="dragonGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9ccf7f"/>
+      <stop offset="0.3" stop-color="#4f944d"/>
+      <stop offset="0.65" stop-color="#245a34"/>
+      <stop offset="1" stop-color="#123220"/>
+    </linearGradient>
+
+    <linearGradient id="dragonBelly" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2d79c"/>
+      <stop offset="0.45" stop-color="#b5a764"/>
+      <stop offset="1" stop-color="#5e6b32"/>
+    </linearGradient>
+
+    <linearGradient id="hornGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff1d0"/>
+      <stop offset="0.6" stop-color="#d3b27b"/>
+      <stop offset="1" stop-color="#7b6136"/>
+    </linearGradient>
+
+    <radialGradient id="pearlGrad" cx="35%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#f9fff6"/>
+      <stop offset="0.45" stop-color="#d7f1d0"/>
+      <stop offset="1" stop-color="#87aa7e"/>
+    </radialGradient>
+
+    <radialGradient id="rubyGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#ff8b8f"/>
+      <stop offset="0.3" stop-color="#c72b3e"/>
+      <stop offset="1" stop-color="#4a0913"/>
+    </radialGradient>
+
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#000" flood-opacity="0.36"/>
+    </filter>
   </defs>
-  <circle cx="100" cy="100" r="94" fill="#0f2015" stroke="url(#goldGrad)" stroke-width="4"/>
-  <circle cx="100" cy="100" r="82" fill="none" stroke="#b8944f" stroke-width="1" opacity="0.5"/>
-  <path d="M100 34 L112 58 L100 50 L88 58 Z" fill="url(#goldGrad)"/>
-  <path d="M60 150 C55 120 65 95 90 82 C82 70 84 55 96 46 C99 60 108 66 118 64
-           C126 74 124 88 114 94 C132 98 146 112 148 132
-           C138 124 126 122 116 126 C122 134 122 146 114 152
-           C108 142 98 138 90 140 C96 148 94 158 86 162
-           C82 152 74 148 66 150 Z"
-        fill="url(#scaleGrad)" stroke="#1c3b26" stroke-width="2"/>
-  <path d="M90 82 C78 86 66 96 60 110" fill="none" stroke="#1c3b26" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="99" cy="55" r="2.6" fill="currentColor"/>
-  <path d="M96 60 Q100 66 106 61" fill="none" stroke="#0f2015" stroke-width="2" stroke-linecap="round"/>
-  <path d="M114 94 C124 92 132 84 132 74" fill="none" stroke="#1c3b26" stroke-width="2" stroke-linecap="round"/>
-  <path d="M40 128 C50 116 62 112 74 116 L70 126 C60 124 52 128 46 138 Z" fill="url(#scaleGrad)" stroke="#1c3b26" stroke-width="1.5"/>
-  <g fill="#c86a3c">
-    <path d="M92 76 L86 66 L98 70 Z"/>
-    <path d="M104 68 L112 58 L110 72 Z"/>
-    <path d="M60 118 L48 112 L62 108 Z"/>
+
+  <!-- Outer crest -->
+  <circle cx="100" cy="100" r="94" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="5"/>
+  <circle cx="100" cy="100" r="84" fill="none" stroke="#bb9851" stroke-width="1.4" opacity="0.65"/>
+  <circle cx="100" cy="100" r="74" fill="none" stroke="#816229" stroke-width="0.8" opacity="0.38"/>
+
+  <!-- top ornament -->
+  <g filter="url(#shadow)">
+    <path d="M100 25 L107 38 L100 34 L93 38 Z" fill="url(#goldGrad)" stroke="#573813" stroke-width="1"/>
+    <circle cx="100" cy="22" r="3.1" fill="url(#rubyGrad)" stroke="#421018" stroke-width="0.9"/>
   </g>
-  <path d="M76 176 L100 168 L124 176 L120 196 L100 206 L80 196 Z" fill="#2f5b3c" stroke="url(#goldGrad)" stroke-width="2.5"/>
-  <text x="100" y="194" text-anchor="middle" font-family="Cinzel, serif" font-size="17" fill="currentColor" font-weight="700">HTN</text>
-</svg>`
+
+  <g filter="url(#shadow)">
+    <!-- glowing pearl -->
+    <circle cx="136" cy="70" r="10.2" fill="url(#pearlGrad)" stroke="url(#goldGrad)" stroke-width="2"/>
+    <circle cx="133.2" cy="66.8" r="2.2" fill="#ffffff" opacity="0.7"/>
+
+    <!-- main serpentine body -->
+    <path
+      d="M58 148
+         C42 139 35 120 41 103
+         C47 86 61 74 79 70
+         C97 66 113 73 120 86
+         C126 96 126 108 120 117
+         C114 126 104 131 93 131
+         C84 131 77 127 76 120
+         C75 112 81 107 89 107
+         C98 107 103 112 104 119
+         C112 115 116 108 116 100
+         C116 90 111 82 101 77
+         C87 70 69 72 57 83
+         C46 93 41 111 46 126
+         C50 138 59 145 70 149
+         C84 155 97 152 106 145
+         C116 137 121 126 124 113
+         C128 98 132 84 140 73"
+      fill="none"
+      stroke="url(#dragonGreen)"
+      stroke-width="18"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- belly stripe -->
+    <path
+      d="M61 144
+         C49 136 44 120 49 106
+         C54 92 66 82 81 79
+         C95 76 107 81 112 91
+         C117 100 117 110 112 117
+         C107 124 99 127 91 127
+         C86 127 82 125 81 121
+         C80 117 83 114 88 114
+         C94 114 97 116 99 120"
+      fill="none"
+      stroke="url(#dragonBelly)"
+      stroke-width="6.5"
+      stroke-linecap="round"
+      opacity="0.95"
+    />
+
+    <!-- tail tuft -->
+    <path
+      d="M59 148
+         C53 155 47 160 39 164
+         C48 165 56 164 63 160
+         C61 166 62 173 68 179
+         C73 169 74 159 70 149 Z"
+      fill="url(#dragonGreen)"
+      stroke="#123220"
+      stroke-width="1.8"
+      stroke-linejoin="round"
+    />
+
+    <!-- neck -->
+    <path
+      d="M121 89
+         C126 80 130 70 131 59
+         C132 48 128 40 122 35
+         C136 34 146 42 149 54
+         C152 68 146 84 134 95 Z"
+      fill="url(#dragonGreen)"
+      stroke="#123220"
+      stroke-width="2.2"
+      stroke-linejoin="round"
+    />
+
+    <!-- head -->
+    <path
+      d="M118 34
+         C120 23 130 16 143 17
+         C154 18 162 25 164 35
+         C175 37 182 43 184 51
+         C175 51 167 54 162 60
+         C156 67 147 70 136 69
+         C125 68 117 62 114 53
+         C111 47 112 39 118 34 Z"
+      fill="url(#dragonGreen)"
+      stroke="#123220"
+      stroke-width="2.4"
+      stroke-linejoin="round"
+    />
+
+    <!-- snout -->
+    <path
+      d="M151 35
+         C165 35 176 40 184 51
+         C174 52 166 55 161 60
+         C155 57 151 52 150 45
+         C150 41 150 38 151 35 Z"
+      fill="#4f8d48"
+      stroke="#123220"
+      stroke-width="2"
+      stroke-linejoin="round"
+    />
+
+    <!-- eye -->
+    <ellipse cx="141" cy="38" rx="4.2" ry="3" fill="#d8c160" stroke="#3f2309" stroke-width="0.9"/>
+    <ellipse cx="142.2" cy="38.1" rx="0.95" ry="2.05" fill="#111"/>
+    <circle cx="139.8" cy="36.9" r="0.65" fill="#fff" opacity="0.82"/>
+
+    <!-- nostril and mouth -->
+    <circle cx="172.5" cy="47.5" r="1.2" fill="#08110d"/>
+    <path d="M148 51 Q159 56 171 51" fill="none" stroke="#08110d" stroke-width="2" stroke-linecap="round"/>
+    <path d="M160 55 L164 62 L167 54 Z" fill="#f4e7bf" stroke="#6c582c" stroke-width="0.7"/>
+
+    <!-- whiskers -->
+    <path d="M154 51 C170 56 181 67 187 81" fill="none" stroke="url(#goldGrad)" stroke-width="1.7" stroke-linecap="round"/>
+    <path d="M150 54 C163 65 169 78 168 92" fill="none" stroke="url(#goldGrad)" stroke-width="1.45" stroke-linecap="round"/>
+    <path d="M146 52 C135 60 128 69 124 80" fill="none" stroke="url(#goldGrad)" stroke-width="1.4" stroke-linecap="round"/>
+
+    <!-- horns -->
+    <path
+      d="M126 28
+         C122 18 124 10 132 4
+         C132 14 136 22 143 28 Z"
+      fill="url(#hornGrad)"
+      stroke="#755a2e"
+      stroke-width="1.3"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M143 27
+         C145 15 153 8 164 6
+         C158 15 158 23 163 30 Z"
+      fill="url(#hornGrad)"
+      stroke="#755a2e"
+      stroke-width="1.3"
+      stroke-linejoin="round"
+    />
+
+    <!-- mane -->
+    <g fill="#7fb66a" stroke="#173421" stroke-width="1">
+      <path d="M119 42 L110 35 L113 48 Z"/>
+      <path d="M117 55 L107 49 L111 60 Z"/>
+      <path d="M120 67 L111 64 L118 74 Z"/>
+      <path d="M127 79 L119 79 L126 87 Z"/>
+    </g>
+
+    <!-- crest spines -->
+    <g fill="#a7d884" stroke="#173421" stroke-width="1">
+      <path d="M66 81 L62 69 L74 79 Z"/>
+      <path d="M82 75 L83 61 L92 76 Z"/>
+      <path d="M98 76 L104 63 L108 79 Z"/>
+      <path d="M114 82 L123 72 L121 87 Z"/>
+    </g>
+
+    <!-- front claw -->
+    <path
+      d="M110 118 C118 123 123 131 124 141"
+      fill="none"
+      stroke="#275b35"
+      stroke-width="6"
+      stroke-linecap="round"
+    />
+    <path
+      d="M124 141 L118 149 M124 141 L127 151 M124 141 L133 147"
+      fill="none"
+      stroke="url(#hornGrad)"
+      stroke-width="1.9"
+      stroke-linecap="round"
+    />
+
+    <!-- rear claw -->
+    <path
+      d="M73 132 C67 139 65 147 66 156"
+      fill="none"
+      stroke="#275b35"
+      stroke-width="5.5"
+      stroke-linecap="round"
+    />
+    <path
+      d="M66 156 L60 162 M66 156 L69 166 M66 156 L74 161"
+      fill="none"
+      stroke="url(#hornGrad)"
+      stroke-width="1.8"
+      stroke-linecap="round"
+    />
+
+    <!-- subtle scale arcs -->
+    <g fill="none" stroke="#d8efae" stroke-width="0.85" opacity="0.34">
+      <path d="M58 109 Q64 104 70 109"/>
+      <path d="M68 95 Q74 90 80 95"/>
+      <path d="M81 86 Q87 81 93 86"/>
+      <path d="M95 84 Q101 79 107 84"/>
+      <path d="M107 91 Q113 86 119 91"/>
+      <path d="M115 104 Q121 99 127 104"/>
+    </g>
+
+    <!-- cloud-like medieval flourish -->
+    <g fill="none" stroke="#b99a58" stroke-width="1.2" opacity="0.45">
+      <path d="M40 64 C47 58 56 59 60 66 C64 60 72 60 76 67"/>
+      <path d="M134 122 C141 116 150 117 154 124 C158 118 166 118 170 125"/>
+    </g>
+  </g>
+
+  <!-- bottom shield -->
+  <g filter="url(#shadow)">
+    <path
+      d="M73 174 L100 165 L127 174 L122 197 L100 209 L78 197 Z"
+      fill="#183726"
+      stroke="url(#goldGrad)"
+      stroke-width="3"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M82 179 L100 172 L118 179 L116 193 L100 201 L84 193 Z"
+      fill="#234b33"
+      stroke="#698748"
+      stroke-width="1"
+      opacity="0.95"
+    />
+    <text
+      x="100"
+      y="194"
+      text-anchor="middle"
+      font-family="Cinzel, Georgia, serif"
+      font-size="17"
+      fill="#e8cf88"
+      font-weight="700"
+      letter-spacing="1.2"
+    >HTN</text>
+  </g>
+</svg>`;
 
 export const seals = {
   shield: `<svg viewBox="0 0 48 48"><path d="M24 4 L42 11 V24 C42 35 34 42 24 45 C14 42 6 35 6 24 V11 Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M24 14 V34 M16 20 H32" stroke="currentColor" stroke-width="2"/></svg>`,
