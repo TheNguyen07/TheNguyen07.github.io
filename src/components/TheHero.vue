@@ -21,10 +21,7 @@ const imgFailed = ref(false)
               class="portrait-img"
               @error="imgFailed = true"
             />
-            <div v-else class="portrait-placeholder">
-              <span class="placeholder-icon" v-html="PersonSilhouette"></span>
-              <span class="placeholder-text">Add your portrait at<br /><code>public/portrait.jpg</code></span>
-            </div>
+            
           </div>
         </div>
         <div class="htn-badge" v-html="HTNShield"></div>
@@ -34,8 +31,7 @@ const imgFailed = ref(false)
         <h1 class="title"><span class="blackletter fk">Hannah T. Nguyen</span></h1>
         <p class="subtitle">King of the Electrical &amp; Computer Engineering kingdom, University of Tulsa</p>
         <p class="lede">
-          A chronicle of studies, quests, and craftsmanship undertaken in the pursuit of cyber
-          operations mastery from reverse-engineered circuit boards to the halls of federal service.
+          Welcome to my chronicles of my studies, quests, and craftsmanship. From reverse-engineering circuits to becoming an embedded summoner and exploring the lands of code.
         </p>
         <div class="hero-links">
           <a class="seal-btn" href="mailto:htn7254@utulsa.edu">Send a Raven (Email)</a>
