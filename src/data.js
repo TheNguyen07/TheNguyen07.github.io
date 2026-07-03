@@ -31,10 +31,6 @@ export const certifications = [
 ]
 
 
-//   images: [
-//     { src: "/projects/portfolio-homepage.jpg", alt: "Portfolio homepage screenshot" },
-//     { src: "/projects/portfolio-mobile.jpg", alt: "Portfolio site on mobile", caption: "Responsive mobile layout" },
-//   ]
 export const feats = [
   {
     title: "Personal Portfolio Website",
@@ -52,7 +48,7 @@ export const feats = [
   {
     title: "Projectile Trajectory Simulation",
     when: "Fall 2025",
-    images: [{ src: "/images/MIPS.png", alt: "MIPS measurements screenshot" },],
+    images: [{ src: `${import.meta.env.BASE_URL}images/MIPS.png`, alt: "MIPS measurements screenshot" },],
     link: "https://github.com/TheNguyen07/MIPS_Physics_Project",
     linkLabel: "Github",
     text: "Programmed in MARS MIPS assembly and C to calculate time-of-flight, maximum height, and trajectory angle, validating results across both implementations with a full report.",
@@ -65,7 +61,7 @@ export const feats = [
   {
     title: "Reverse-Engineered custom PCB into an FPGA board",
     when: "Fall 2025",
-    images: [{ src: "/images/Basys.png", alt: "Basys3 screenshot" },],
+    images: [{ src: `${import.meta.env.BASE_URL}images/Basys.png`, alt: "Basys3 screenshot" }],
     text: "Reverse engineered a custom PCB and rebuilt its functionality on an FPGA board using VHDL.",
     details: [
       "Starting from a physical circuit board with no accompanying schematic, this project involved tracing signal paths, identifying components, and inferring the board's logic purely from its physical layout and observed behavior.",
@@ -87,7 +83,7 @@ export const feats = [
   {
     title: "RFID Analysis of University IDs",
     when: "Fall 2023",
-    images: [{ src: "/images/Blocks.png", alt: "Data Blocks screenshot" },],
+    images: [{ src: `${import.meta.env.BASE_URL}images/Blocks.png`, alt: "Data Blocks screenshot" },],
     text: "Capstone project reverse engineering TU ID card systems; identified three vulnerabilities and proposed lock-bit password protection, hardware reinforcement, and card-number obfuscation.",
     details: [
       "This capstone research project examined the security of the university's RFID-based ID card system from both the software and hardware sides, treating it as a real-world case study in access-control vulnerabilities.",
