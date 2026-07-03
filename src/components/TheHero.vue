@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { PersonSilhouette, HTNShield, KingsCrown } from '../icons.js'
+import {  HTNShield, KingsCrown } from '../icons.js'
 
 const portraitSrc = '/Professional photo.jpeg'
 const imgFailed = ref(false)
@@ -34,8 +34,11 @@ const imgFailed = ref(false)
         </p>
         <div class="hero-links">
           <a class="seal-btn" href="mailto:htn7254@utulsa.edu">Send a Raven 🐦‍⬛ (Email)</a>
-          <a class="seal-btn outline" href="https://TheNguyen07.github.io" target="_blank" rel="noopener">
-            Visit the Archive (Resume)
+          <a class="seal-btn outline" href="https://github.com/TheNguyen07" target="_blank" rel="noopener">
+            Visit the Archive (Github)
+          </a>
+          <a class="seal-btn outline" href="https://www.linkedin.com/in/hannah-tt-nguyen/" target="_blank" rel="noopener">
+            View my Alliances (Linkedin)
           </a>
         </div>
       </div>

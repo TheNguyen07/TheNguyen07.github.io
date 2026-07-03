@@ -59,8 +59,8 @@ function toggle(title) {
                   </figure>
                 </div>
                 <p v-for="(paragraph, i) in f.details" :key="i">{{ paragraph }}</p>
-                <a v-if="f.link" :href="'https://' + f.link" target="_blank" rel="noopener">{{ f.link }} →</a>
-                <!-- <a v-if="f.link" :href="f.link" target="_blank" rel="noopener">{{ f.linkLabel || f.link }}</a> -->
+                <!-- <a v-if="f.link" :href="'https://' + f.link" target="_blank" rel="noopener">{{ f.link }} →</a> -->
+                <a v-if="f.link" :href="f.link" target="_blank" rel="noopener">{{ f.linkLabel || f.link }}</a>
               </div>
             </div>
           </div>
