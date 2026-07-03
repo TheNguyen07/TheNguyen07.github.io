@@ -27,11 +27,11 @@ import ScrollPanel from './ScrollPanel.vue'
       </div>
 
       <div class="course-cluster">
-        <h4>Currently in Session — Spring 2025</h4>
+        <h4>Currently in Session — Spring 2027</h4>
         <div class="tag-row">
           <span class="tag" v-for="c in courseworkNow" :key="c">{{ c }}</span>
         </div>
-        <h4>Currently in Session — Fall 2025</h4>
+        <h4>Currently in Session — Fall 2026</h4>
         <div class="tag-row">
           <span class="tag" v-for="c in courseworkFall" :key="c">{{ c }}</span>
         </div>
