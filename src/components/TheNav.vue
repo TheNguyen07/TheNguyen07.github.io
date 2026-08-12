@@ -2,6 +2,9 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { DragonCrest } from '../icons.js'
 
+// defineEmits(['toggle-schedule', 'go-home'])
+// I want to go home
+
 const links = [
   { href: '#education', label: 'Learning Halls' },
   { href: '#armory', label: 'Armory' },
@@ -17,9 +20,15 @@ const resumeHref = '/Nguyen_Resume_Website.pdf'
 
 const isOpen = ref(false)
 const navEl = ref(null)
+const emit = defineEmits(['toggle-schedule', 'go-home'])
 
 function toggleMenu() {
   isOpen.value = !isOpen.value
+}
+
+function goHome() {
+  closeMenu()
+  emit('go-home')
 }
 
 function closeMenu() {
@@ -50,7 +59,7 @@ onBeforeUnmount(() => {
 <template>
   <nav class="ribbon" ref="navEl">
     <div class="inner">
-      <a href="#top" class="brand" @click="closeMenu">
+      <a href="#" class="brand" @click.prevent="$emit('toggle-schedule')">
         <span class="brand-icon" v-html="DragonCrest"></span>
         Hannah T. Nguyen
       </a>
@@ -71,10 +80,10 @@ onBeforeUnmount(() => {
       <div class="nav-right" id="nav-panel" :class="{ 'is-open': isOpen }">
         <ul>
           <li v-for="link in links" :key="link.href">
-            <a class="nav-link" :href="link.href" @click="closeMenu">{{ link.label }}</a>
+            <a class="nav-link" :href="link.href" @click="goHome">{{ link.label }}</a>
           </li>
         </ul>
-        <a class="nav-resume" :href="resumeHref" target="_blank" rel="noopener" @click="closeMenu">
+        <a class="nav-resume" :href="resumeHref" target="_blank" rel="noopener" @click="goHome">
           The Full Scroll (Résumé)
         </a>
       </div>

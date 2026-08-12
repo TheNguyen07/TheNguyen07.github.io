@@ -4,3 +4,4 @@ dist
 *.local
 README_copy.md
 .github\workflows\deploy.yml
+*.yml
