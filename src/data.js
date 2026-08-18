@@ -4,14 +4,20 @@ export const education = [
   { school: "Union High School, Tulsa, Oklahoma", degree: "High School Diploma", meta: "Salutatorian", when: "May 2023", gpa: "4.96 (Weighted)" },
 ]
 
-export const courseworkNow = ["ECE Design Project II", "Neural Networks", ]
+export const courseworkNow = ["ECE Design Project II", "Neural Networks", "Advanced Electronics"]
 export const courseworkFall = ["General Chemistry I & Laboratory", "Information and Communication Systems", "ECE Design Project I", "Solid State Electric Device", "Engineering Economics"]
-export const courseworkDone = ["Hardware Reverse Engineering", "Radio Frequencies Signal Analysis/Exploitation/Reverse Engineering", "Intro to Program Problem Solving", "Computer Science Principles", "Calculus I-III", "Intro to Statistics", "Intro to Computer Science", "Ethics in Computers & Engineering", "Computer Tools for Electrical Engineers", "Exposition & Argument", "Pirate Atlantic World", "Business & Society", "Fundamental Algorithms in Computer Applications & Laboratory", "Digital Systems Principles & Design Laboratory", "Discrete Mathematics", "Statistical Methods for Scientsts and Engineers", "General Physics I-III & Laboratories", "Public Speaking", "Data Structures", "Electric Circuit Analysis & Laboratory", "Differential Equations", "Reasoning", "Computer Organization/Microprocessors", "Introduction to Electromagnetics", "Linear Algebra Matrix Theory", "Embedded Systems in C", "Electric Power Systems", "Signal & Linear Systems", "Electronics I-II & Laboratory", "PCB Design Principles & Practicals", "Wizard of Oz & American History", "Operating Systems", "Classical Control Theory Applications", "Advanced Embedded Systems", "Stem and Business Writing"];
+export const courseworkDone = ["Hardware Reverse Engineering", "Radio Frequencies Signal Analysis/Exploitation/Reverse Engineering", "Digital Systems Principles & Design Laboratory", "Embedded Systems in C", 
+  "Electric Power Systems", "Signal & Linear Systems", "Electronics I-II & Laboratory", "PCB Design Principles & Practicals", "Classical Control Theory Applications", "Advanced Embedded Systems", "General Physics I-III & Laboratories", 
+  "Electric Circuit Analysis & Laboratory", "Intro to Program Problem Solving", "Computer Science Principles", "Calculus I-III", "Intro to Statistics", "Intro to Computer Science", "Ethics in Computers & Engineering", "Computer Tools for Electrical Engineers", "Exposition & Argument", 
+  "Pirate Atlantic World", "Business & Society", "Fundamental Algorithms in Computer Applications & Laboratory",  "Discrete Mathematics", "Statistical Methods for Scientsts and Engineers", 
+  "Public Speaking", "Data Structures", "Differential Equations", "Reasoning", "Computer Organization/Microprocessors", "Introduction to Electromagnetics", 
+  "Linear Algebra Matrix Theory", "Wizard of Oz & American History", "Operating Systems",  "Stem and Business Writing"];
 
 export const armory = [
   { title: "Realms Traversed", icon: "tower", items: ["Windows 10 / 11", "Linux", "Ubuntu"] },
-  { title: "Tongues Spoken to Machines", icon: "scroll", items: ["Java", "Python", "C / C++ (Embedded)", "JavaScript, HTML, CSS", "Lua, RobotC", "MATLAB, MIPS, VHDL", "Vue 3, Vuetify 3", "LaTeX"] },
-  { title: "Instruments of the Craft", icon: "gem", items: ["Autodesk Inventor & Fusion 360", "AutoCAD, KiCAD, Altium Designer", "MATLAB Simulink & Simscape", "Hercules, VS Code, Arduino IDE", "Soldering Iron & Bench Tools"] },
+  { title: "Tongues Spoken to Machines", icon: "scroll", items: ["Java, Python", "C / C++ (Embedded)", "JavaScript, HTML, CSS, Bootstrap", "Lua, RobotC", "MATLAB, MIPS, VHDL", "Vue 3, Vuetify 3", "LaTeX, Git"] },
+  { title: "Instruments of the Craft", icon: "gem", items: ["Autodesk Inventor & Fusion 360", "AutoCAD, KiCAD, Altium Designer", "MATLAB, Simulink, & Simscape", "Hercules, VS Code, Xilinx","Arduino IDE, RaspberryPi, STM32", "Soldering & Bench Tools"] },
+  { title: "Guildcraft & Command", icon: "shield", items: ["Leadership", "Project Management", "Technical Writing", "Product Testing", "Independent Research", "Presentation & Public Speaking"] },
   { title: "Spoken Tongues", icon: "sword", items: ["English", "Vietnamese"] },
 ]
 
@@ -27,9 +33,10 @@ export const quests = [
 export const certifications = [
   { code: "GCIH", title: "SANS GIAC Incident Handler Certification", when: "Jan 2025 – Jan 2029", text: "GIAC Incident Handler (GCIH) certified professional with proven ability to detect, respond to, and resolve security incidents through deep understanding of attack techniques, vectors, tools, and effective incident response strategies." },
   { code: "GICSP", title: "SANS Global Industrial Cyber Security Professional Certification", when: "Nov 2025 - Nov 2029", text: "Global Industrial Cyber Security Professional (GICSP) certified, bridging IT, engineering, and cybersecurity to secure industrial control systems across their full lifecycle in vendor-neutral, operational environments."},
-  { code: "TS/SCI", title: "TS/SCI Clearance", when: "Active", text: "Top Secret / Sensitive Compartmented Information security clearance." },
+    { code: "TS/SCI", title: "TS/SCI Clearance"}
+    //, when: "Active"}
+  // , text: "Top Secret / Sensitive Compartmented Information security clearance." },
 ]
-
 
 export const feats = [
   {
