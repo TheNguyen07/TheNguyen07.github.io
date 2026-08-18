@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import {  HTNShield, KingsCrown } from '../icons.js'
 
-const portraitSrc = '/Professional photo.jpeg'
+const portraitSrc = '/Professional photo 2026.jpg'
 const imgFailed = ref(false)
 </script>
 

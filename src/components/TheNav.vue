@@ -16,7 +16,7 @@ const links = [
 ]
 
 // Points at /public/resume.pdf — see README "Updating your resume" to swap the file.
-const resumeHref = '/Nguyen_Resume_Website.pdf'
+const resumeHref = '/Resume_Website_Nguyen_2026.pdf'
 
 const isOpen = ref(false)
 const navEl = ref(null)
