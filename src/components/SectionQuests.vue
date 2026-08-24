@@ -14,7 +14,7 @@ import ScrollPanel from './ScrollPanel.vue'
       </div>
     </div>
 
-    <ScrollPanel v-reveal>
+    <!-- <ScrollPanel v-reveal>
       <div class="timeline">
         <div class="quest" v-for="q in quests" :key="q.org + q.when">
           <span class="when">{{ q.when }}</span>
@@ -23,6 +23,25 @@ import ScrollPanel from './ScrollPanel.vue'
           <p>{{ q.text }}</p>
         </div>
       </div>
-    </ScrollPanel>
+    </ScrollPanel> -->
+    <ScrollPanel v-reveal>
+  <div class="timeline">
+    <div class="quest" v-for="q in quests" :key="q.org + q.when">
+      <span class="when">{{ q.when }}</span>
+      <h3>{{ q.org }}</h3>
+      <p class="role">{{ q.role }}</p>
+
+      <ul class="quest-bullets">
+        <li
+          v-for="(bullet, index) in (Array.isArray(q.text) ? q.text : [q.text])"
+          :key="index"
+        >
+          {{ bullet }}
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</ScrollPanel>
   </section>
 </template>
