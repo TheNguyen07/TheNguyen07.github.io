@@ -33,7 +33,7 @@ const imgFailed = ref(false)
           Welcome to the chronicles of my studies, quests, and craftsmanship. From reverse-engineering circuits to becoming an embedded summoner and exploring the lands of code.
         </p>
         <div class="hero-links">
-          <a class="seal-btn" href="mailto:htn7254@utulsa.edu">Send a Raven 🐦‍⬛ (Email)</a>
+          <a class="seal-btn" href="mailto:nguyent.hannah07@gmail.com">Send a Raven 🐦‍⬛ (Email)</a>
           <a class="seal-btn outline" href="https://github.com/TheNguyen07" target="_blank" rel="noopener">
             Visit the Archive (Github)
           </a>

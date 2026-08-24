@@ -22,12 +22,81 @@ export const armory = [
 ]
 
 export const quests = [
-  { org: "University School, University of Tulsa", role: "Lab Assistant", when: "Fall 2025 – Present", text: "Assisted 7th-grade Computer Science and 8th-grade Computer Engineering classrooms, and helped organize STEM Club activities engaging students in hands-on projects." },
-  { org: "U.S. Government, Washington D.C.", role: "Software Developer Intern", when: "Summer 2025", text: "Developed an AI-assisted application for data triage of a collection; supported engineering, integration, and product evaluation for a collaborative workgroup platform." },
-  { org: "NCFI Laboratory, University of Tulsa", role: "Undergraduate Researcher", when: "Fall 2023 – Spring 2025", text: "Researched alternative-reality software for affordably re-creating digital crime scenes and reconstructing large areas for digital analysis of protection locations during event planning." },
-  { org: "TURC Program, University of Tulsa", role: "Volunteer Java Programming Instructor", when: "Summer 2024", text: "Co-taught two Java courses to 37 incoming freshmen, giving students a head start that let them bypass introductory coursework and begin advanced classes in their first semester." },
-  { org: "Junior TURC Program, University of Tulsa", role: "High School Researcher", when: "Summer 2022", text: "Helped migrate the Rayzor Hall keycard system from Arduino to STMicroelectronics, and helped design a physical adaptation of the VR game \u201cKeep Talking and Nobody Explodes.\u201d" },
-  { org: "Information Technology Dept., Union Public Schools", role: "Information Technology Intern", when: "Fall 2022 – Spring 2023", text: "Provided in-person IT assistance to students, repaired hardware, and installed software." },
+  {
+    org: "U.S. Government, Washington D.C.",
+    when: "Summer 2026",
+    role: "Digital Engineering Intern",
+    text: [
+      "Co-created an enterprise-wide database tracking interface for digital forensics, streamlining legacy workflows for approvals, procurement, and renewals, improving productivity, and presenting the system to senior leadership.",
+      "Designed and developed the web application using HTML, CSS, JavaScript, Bootstrap, Python, and Flask, later migrating it to Node.js and Angular to improve scalability, maintainability, and performance while using Ansible for deployment and configuration management.",
+      "Performed hardware teardowns and comparative analysis of similar consumer electronic and electromechanical devices from multiple manufacturers, including data extraction and disassembly/reassembly of mobile, laptop, and other select hardware.",
+      "Created detailed technical documentation of teardowns, device comparisons, and project findings, including extensive documentation for an individual intern project.",
+      "Communicated regularly with management to report progress, address challenges and roadblocks, and incorporate feedback for continuous improvement."
+    ]
+  },
+
+  {
+    org: "University School, University of Tulsa",
+    when: "Fall 2025 – Present",
+    role: "Lab Assistant",
+    text: [
+      "Presented hands-on projects to middle school computer science and engineering classes, promoting STEM engagement through interactive learning experiences.",
+      "Assisted in managing a multi-node Raspberry Pi rack, supporting system setup, maintenance, and experimentation with distributed computing environments."
+    ]
+  },
+
+  {
+    org: "U.S. Government, Washington D.C.",
+    when: "Summer 2025",
+    role: "Software Developer Intern",
+    text: [
+      "Developed and designed an application to assist with AI-enabled data triage. Specialized in engineering, development, integration, and product evaluation services for the workgroup platform while providing infrastructure support for communications and collaboration within the Europe & Eurasia Mission Center.",
+      "Developed a full-stack application from scratch to support AI-enabled triage, retrieval, and exploitation of sensitive data from complex technical collections, rapidly learning and implementing a new framework.",
+      "Used Vue3 and Vuetify to build an intuitive user interface and AI chatbot, integrating AI API calls for efficient search and retrieval while improving usability through structured data presentation and streamlined functionality.",
+      "Collaborated with cross-functional teams including data scientists, engineers, and IT administrators to support AI/ML integration, cloud application development, and mission-focused data workflows.",
+      "Improved system reliability and maintainability by debugging, cleaning, and documenting code while communicating technical progress and issues across teams.",
+      "Recognized for strong performance, technical capability, and ability to integrate effectively within a high-performing team."
+    ]
+  },
+
+  {
+    org: "NCFI Laboratory, University of Tulsa",
+    when: "Fall 2023 – May 2025",
+    role: "Undergraduate Researcher",
+    text: [
+      "Conducted research on alternative reality software and tools to quickly and affordably recreate digital crime scenes and reconstruct large areas for digital analysis of protection locations during event planning."
+    ]
+  },
+
+  {
+    org: "TURC Program, University of Tulsa",
+    when: "Summer 2024",
+    role: "Volunteer Java Programming Instructor",
+    text: [
+      "Co-taught two Java programming classes to 37 incoming freshmen.",
+      "Helped students get a head start in their computer science education, enabling them to bypass the first two introductory courses and take advanced courses during their first semester in college."
+    ]
+  },
+
+  {
+    org: "Junior TURC Program, University of Tulsa",
+    when: "Summer 2022",
+    role: "High School Researcher",
+    text: [
+      "Helped update the Rayzor Hall keycard system from an Arduino to an STMicroelectronics implementation.",
+      "Redesigned 3 PCBs with KiCad for a physical adaptation of the game “Keep Talking and Nobody Explodes.”"
+    ]
+  },
+
+  {
+    org: "Information Technology Department, Union Public Schools",
+    when: "Fall 2022 – Spring 2023",
+    role: "Information Technology Intern",
+    text: [
+      "Provided in-person assistance to students with information technology problems.",
+      "Repaired laptop hardware and installed software."
+    ]
+  }
 ]
 
 export const certifications = [
@@ -55,7 +124,7 @@ export const feats = [
   {
     title: "Projectile Trajectory Simulation",
     when: "Fall 2025",
-    images: [{ src: `${import.meta.env.BASE_URL}images/MIPS.png`, alt: "MIPS measurements screenshot" },],
+    images: [{ src: `/images/MIPS.png`, alt: "MIPS measurements screenshot" },],
     link: "https://github.com/TheNguyen07/MIPS_Physics_Project",
     linkLabel: "Github",
     text: "Programmed in MARS MIPS assembly and C to calculate time-of-flight, maximum height, and trajectory angle, validating results across both implementations with a full report.",

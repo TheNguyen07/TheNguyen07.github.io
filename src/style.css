@@ -260,6 +260,33 @@ section:first-of-type{ border-top:none; }
 .quest .role{ font-family:'Cinzel',serif; font-size:13px; color:var(--moss); text-transform:uppercase; letter-spacing:0.05em; margin:2px 0 8px; }
 .quest .when{ float:right; font-family:'Cinzel',serif; font-size:12.5px; color:var(--crimson); }
 .quest p{ color:var(--ink-soft); margin:0; clear:both; }
+.quest-bullets{
+  list-style:none;
+  padding-left:0;
+  margin:8px 0 0;
+  clear:both;
+}
+
+.quest-bullets li{
+  position:relative;
+  padding-left:22px;
+  margin-bottom:8px;
+  color:var(--ink-soft);
+  line-height:1.5;
+}
+
+.quest-bullets li:last-child{
+  margin-bottom:0;
+}
+
+.quest-bullets li::before{
+  content:"❖";
+  position:absolute;
+  left:0;
+  top:0;
+  color:var(--crimson);
+  font-size:12px;
+}
 
 /* seals of mastery / certs */
 .seal-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; }
