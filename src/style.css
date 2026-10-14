@@ -305,6 +305,39 @@ section:first-of-type{ border-top:none; }
 .wax-seal p{ margin:0; color:var(--ink-soft); font-size:15.5px; }
 
 /* projects / feats — expandable accordion entries */
+
+
+/* Video gallery */
+.feat-video-gallery {
+  margin-top: 1rem;
+}
+
+/* Video container */
+.feat-video-frame {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+/* Video player */
+.feat-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+}
+
+/* YouTube embed */
+iframe.feat-video {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
 .feats-list{ display:flex; flex-direction:column; }
 .feat-entry{ border-bottom:1px solid rgba(122,35,50,0.22); }
 .feat-entry:first-child{ border-top:1px solid rgba(122,35,50,0.22); }
